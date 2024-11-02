@@ -2256,37 +2256,38 @@ nsresult nsMsgFilterList::SaveTextFilters(nsIOutputStream *aStream)
   } ,
   
   setupToolbar: function() {
-		const prefs = quickFilters.Preferences,
-          getElement = document.getElementById.bind(document);
-		// Toolbar
-		let toolbox = getElement("quickfilters-toolbox"),
-		    hbs = document.getElementsByTagName('hbox'),
-		  hbox = hbs ? hbs[0] : null ;
-		let isToolbar = false;
-		if (!prefs.getBoolPref("toolbar")) {
-		  // toolbox.parentNode.removeChild(toolbox);
+    const prefs = quickFilters.Preferences,
+      getElement = document.getElementById.bind(document);
+    // Toolbar
+    const toolbox = getElement("quickfilters-toolbox"),
+      hbox = getElement("filterHeader"); // [issue 265]
+    // hbs = document.getElementsByTagName('hbox'),
+    // hbox = hbs ? hbs[0] : null;
+
+    let isToolbar = false;
+    if (!prefs.getBoolPref("toolbar")) {
       toolbox.collapsed = true;
-		} else if (hbox && toolbar) { // move toolbox up
-			hbox.parentNode.insertBefore(toolbox, hbox);
-			isToolbar = true;
-			if (quickFilters.Util.AssistantActive) {  // needs to bve asked from background script!
-				let button = getElement('quickFiltersBtnStart');
-				button.checked = true;			
-			}
+    } else if (hbox && toolbar) {
+      // move toolbox up
+      hbox.parentNode.insertBefore(toolbox, hbox);
+      isToolbar = true;
+      if (quickFilters.Util.AssistantActive) {
+        // needs to bve asked from background script!
+        let button = getElement("quickFiltersBtnStart");
+        button.checked = true;
+      }
       toolbox.collapsed = false;
-		}
+    }
     //move buttons to the correct place
     let down = getElement("reorderDownButton"),
-        mergeButton = getElement("quickFilters-mergeButton");
+      mergeButton = getElement("quickFilters-mergeButton");
     if (mergeButton) {
-		  if (isToolbar) {
-				mergeButton.parentNode.removeChild(mergeButton); // remove unneccessary button
+      if (isToolbar) {
+        mergeButton.parentNode.removeChild(mergeButton); // remove unneccessary button
       } else {
-				down.parentNode.insertBefore(mergeButton, getElement("deleteButton").nextSibling);
+        down.parentNode.insertBefore(mergeButton, getElement("deleteButton").nextSibling);
       }
     }
-		
-    
   } ,
   
   dummy: function() {

@@ -109,7 +109,7 @@ async function onLoad(activatedWhileWindowOpen) {
   </popupset>
   
 
-  <toolbox id="quickfilters-toolbox" insertbefore="status-bar" tooltip="quickFiltersToolTip">
+  <toolbox id="quickfilters-toolbox" tooltip="quickFiltersToolTip">
   <toolbar 
     id="quickfilters-toolbar" 
     toolbarname="quickFilters Tools"
