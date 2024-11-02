@@ -634,12 +634,13 @@ END LICENSE BLOCK
     # [issue 254] msgsMoveCopyCompleted: remove "no destmsg!"
 
 
-
-
   6.5.3 - 27/08/2024
     # [issue 262] Maintenance fix in v6.5.3: The merge filters option had stopped working in 6.5.2 
     # Added compatibility with Thunderbird 130
     
+  6.6 - WIP
+    # [issue 265] Change Request for userChromeJS script: Message Filters Toolbar Implementation - insert above filterHeader (not any 1st hbox)
+    # [issue 275] Keyboard Shortcut conflict with 'AI Anywhere' extension
 
 
   ============================================================================================================
@@ -1614,86 +1615,99 @@ var quickFilters = {
     // if (isDisableKeyListeners) return;
 
     const util = quickFilters.Util,
-          prefs = quickFilters.Preferences,
-          isRunFolderKey = prefs.isShortcut("folder"),
-          isSelectedMailsKey = prefs.isShortcut("mails");
+      prefs = quickFilters.Preferences,
+      isRunFolderKey = prefs.isShortcut("folder"),
+      isSelectedMailsKey = prefs.isShortcut("mails");
 
-    util.logDebugOptional("events.keyboard","key event:", e);          
+    util.logDebugOptional("events.keyboard", "key event:", e);
     if (!isRunFolderKey && !isSelectedMailsKey) return;
-    
+
     let isAlt = e.altKey,
-        isCtrl = e.ctrlKey,
-        isShift = e.shiftKey,
-        eventTarget = e.target;
-          
+      isCtrl = e.ctrlKey,
+      isShift = e.shiftKey,
+      eventTarget = e.target;
+
     // shortcuts should only work in thread tree, folder tree and email preview (exclude conversations as it might be in edit mode)
-    let tag = eventTarget.tagName ? eventTarget.tagName.toLowerCase() : '';
-    if (   eventTarget.id != 'threadTree' 
-        && eventTarget.id != 'folderTree'
-        && eventTarget.id != 'accountTree'
-        && (
-          (tag
-            &&
-						[
-							"textarea",        			// Postbox quick reply
-							"textbox",         			// any textbox
-							"input",           			// Thunderbird 68 textboxes.
-							"html:input",      			// Thunderbird 78 textboxes.
-							"search-textbox", 		 	// Thunderbird 78 search boxes 
-							"xul:search-textbox",  	// Thunderbird 115 search boxes  [issue ]
-							"global-search-bar",     // Thunderbird 115 global search [issue ]
-							"findbar"              	// [Bug 26654] in-mail search
-						].includes(tag)
-          )
-          ||
-          (eventTarget.baseURI 
-            &&
-           eventTarget.baseURI.toString().lastIndexOf("chrome://conversations",0)===0)
-        )
-       )
-    {
+    let tag = eventTarget.tagName ? eventTarget.tagName.toLowerCase() : "";
+    if (
+      eventTarget.id != "threadTree" &&
+      eventTarget.id != "folderTree" &&
+      eventTarget.id != "accountTree" &&
+      ((tag &&
+        [
+          "textarea", // Postbox quick reply
+          "textbox", // any textbox
+          "input", // Thunderbird 68 textboxes.
+          "html:input", // Thunderbird 78 textboxes.
+          "search-textbox", // Thunderbird 78 search boxes
+          "xul:search-textbox", // Thunderbird 115 search boxes  [issue ]
+          "global-search-bar", // Thunderbird 115 global search [issue ]
+          "findbar", // [Bug 26654] in-mail search
+        ].includes(tag)) ||
+        (eventTarget.baseURI &&
+          eventTarget.baseURI.toString().lastIndexOf("chrome://conversations", 0) === 0))
+    ) {
       return; // NOP
     }
-    
+
+    // [issue 275] 'AI Anywhere', QNote and other web extensions.
+    if (eventTarget.classList && eventTarget.classList.contains("webextension-popup-browser")) {
+      return;
+    }
+
     if (window) {
       let tabmail = document.getElementById("tabmail");
-      let selectedTab = tabmail.currentTabInfo,       
-          tabMode = null;
+      let selectedTab = tabmail.currentTabInfo,
+        tabMode = null;
       if (selectedTab) {
         tabMode = quickFilters.Util.getTabMode(selectedTab);
-        if (tabMode == "glodaSearch" && tab.collection) { //distinguish gloda search result
+        if (tabMode == "glodaSearch" && tab.collection) {
+          //distinguish gloda search result
           tabMode = "glodaSearch-result";
         }
-        if (quickFilters.Util.isTabMode(selectedTab,"mail")) {
-          let isShiftOnly = !isAlt && !isCtrl && isShift && dir!='up',
-              theKeyPressed = (String.fromCharCode(e.charCode)).toLowerCase();
+        if (quickFilters.Util.isTabMode(selectedTab, "mail")) {
+          let isShiftOnly = !isAlt && !isCtrl && isShift && dir != "up",
+            theKeyPressed = String.fromCharCode(e.charCode).toLowerCase();
           if (isRunFolderKey) {
             if (isShiftOnly && theKeyPressed == prefs.getShortcut("folder").toLowerCase()) {
               util.logDebug("detected: Shortcut for Run filters on Folder");
-              
+
               if (quickFilters.Preferences.getBoolPref("shortcuts.challenge")) {
                 let folder = util.getCurrentFolder();
-                if (!(folder.getFlag(util.FolderFlags.Inbox))) {
-                  let txt = util.getBundleString("runFilters.folder.confirm", "", [folder.prettyName]);
-                  let result = Services.prompt.confirm(util.getMail3PaneWindow(), "quickFilters", txt);
+                if (!folder.getFlag(util.FolderFlags.Inbox)) {
+                  let txt = util.getBundleString("runFilters.folder.confirm", "", [
+                    folder.prettyName,
+                  ]);
+                  let result = Services.prompt.confirm(
+                    util.getMail3PaneWindow(),
+                    "quickFilters",
+                    txt
+                  );
                   if (!result) return;
                 }
               }
               quickFilters.onApplyFilters();
-              return; 
+              return;
             }
           }
           if (isSelectedMailsKey) {
             if (isShiftOnly && theKeyPressed == prefs.getShortcut("mails").toLowerCase()) {
               util.logDebug("detected: Shortcut for Run filters on Selected Mails");
               let folder = util.getCurrentFolder();
-              if (!(folder.getFlag(util.FolderFlags.Inbox)) && quickFilters.Preferences.getBoolPref("shortcuts.challenge")) {
+              if (
+                !folder.getFlag(util.FolderFlags.Inbox) &&
+                quickFilters.Preferences.getBoolPref("shortcuts.challenge")
+              ) {
                 let txt = util.getBundleString("runFilters.selection.confirm");
-                let result = Services.prompt.confirm(util.getMail3PaneWindow(), "quickFilters", txt);
+                let result = Services.prompt.confirm(
+                  util.getMail3PaneWindow(),
+                  "quickFilters",
+                  txt
+                );
                 if (!result) return;
               }
               quickFilters.onApplyFiltersToSelection();
-              return; 
+              return;
             }
           }
         }
