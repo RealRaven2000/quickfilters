@@ -453,25 +453,49 @@ permalink: filtaquilla.html
 
   <ul>
     <li>
-      Exclude all HTML tags: this will remove tags such as &gt;p&lt; from 
+      Exclude all HTML tags: this will remove tags such as &lt;p&gt; from 
       the html parts of the email before matching the expression.
     </li>
     <li>
-      exclude global  &gt;style&lt; tags + CSS: remove the layout tag_thread_msg
+      Exclude global &lt;style&gt; tags + CSS: remove the layout tag_thread_msg
       and all contained rules within these blocks, to avoid false matches.      
     </li>
     <li>
-      exclude quotes: only looks at the content in the main email 
+      Exclude quotes: only looks at the content in the main email 
       and omit any quoted content. (this does not work in plain text when
       'raw mode' is selected)
     </li>
     <li>
-      collapse all whitespace: remove all new lines and spacs / tabs AND
+      Collapse all whitespace: remove all new lines and spacs / tabs AND
       replace them with single spaces 
       (this does not work in plain text when 'raw mode' is selected)
     </li>
   </ul>
 
+  <h4>Content Restrictions</h4>
+  <p>
+    If none of these options are selected, then HTML parts, plain and 
+    potentially other "text/*" formats are scanned. Otherwise you can
+    select specific content types, which can lead to better performance.
+  </p>
+  <ul>
+    <li>
+      process plain text parts: 
+      will read the parts that include the word "plain"
+      such as "text/plain"
+    </li>
+    <li>
+      process html parts: 
+      will read the parts that include the word "html"
+      such as "text/html" and "text/x-html" or "text/x-amp-html"
+    </li>
+    <li>
+      process vcard parts: 
+      reads parts such as "text/vcard" and "text/x-vcard".
+      These are often found in attachments and are also 
+      matched by Regex in this case.
+    </li>
+  </ul>
 
 <!--
   <form id="regexForm">
