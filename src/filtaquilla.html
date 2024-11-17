@@ -22,9 +22,12 @@ permalink: filtaquilla.html
 
 
 <a name="about"> </a>
-<p>This is the official new home of the FiltaQuilla extension, which is now compatible with Thunderbird 78. Its original author Kent James 
-had to retire a few years back for health reasons, so I decided to adopt it as it is important for mail users who need advanced
-filtering options. </p>
+<p>
+  This is the official new home of the FiltaQuilla extension, which is now 
+  compatible with Thunderbird 78. Its original author Kent James 
+  had to retire a few years back for health reasons, so I decided to adopt it as 
+  it is important for mail users who need advanced
+  filtering options. </p>
 <p> Further content on this page:</p>
 <p> 
   <a href="#donate">Donations</a><br>
@@ -37,8 +40,9 @@ filtering options. </p>
 
 <a name="donate"> </a>
 <h3>Donations</h3>
-<p>If you would like to support the FiltaQuilla project, pleae use one of the donation links below - note that these will be 
-issued to my Company "Song Craft Studios":</p>
+<p>
+  If you would like to support the FiltaQuilla project, pleae use one of the donation links 
+  below - note that these will be  issued to my Company "Song Craft Studios":</p>
 <table border=0>
 	<tr>
 		<td style="vertical-align:top;">
@@ -399,6 +403,84 @@ issued to my Company "Song Craft Studios":</p>
     +/- (maxthreadscan/2) of the target message for the search.</p>
   <p>This search may be slow, so you may find a considerable delay when this search term is used.</p>
   <p>Warning: the next three search terms are targeted toward geeks only.</p>
+
+  <a name="regex_link"> </a>
+  <h3>Regular expressions - General notes</h3>
+
+  <p>
+    From version 4.3 on FiltaQuilla offers a panel with additional options 
+    for regular expressions:
+  </p>
+  <p>
+    <img src="img/regex-panel.png" alt="regex panel" class="screenshot"/>
+  </p>
+  <p>
+    This is designed to look at specific parts of the email, and preprocessing 
+    the various parts to make creating working search patterns easier.
+
+    If you look for a combination of words in plain text, these are often
+    broken up into separate lines via a reflow. Therefore plain text parts are now
+    santized by pulling text sections together when they are cut up
+    by single line breaks. 
+  </p>
+  <p>
+    FiltaQuilla also removes the quote marks in between those line breaks as they 
+    are routinely inserted by reflow which makes searching for word combinations
+    much more difficult. To see the actual processed text you can use debug mode 
+    and toggle the switch <tt>extensions.filtaquilla.debug.regexBody_parts = true</tt>
+    (you can activate these options via right-click on the Debug checkbox on FiltaQuilla Settings
+    page "Help/About FQ"). 
+    
+    Then you can see the actual processed text displayed in Thunderbird error console
+    during filter execution.
+  </p>
+  <p>
+    To see the unmodified, raw plain text activate the option "Raw mode"
+  </p>
+  <p>
+    You can click the "Pencil" icon beside Regular expression to help
+    building and testing a regular expression at regex101.com.
+    It will transmit the current expression and search switches
+    to the site and try to preselect the "ECMAScript" flavor, 
+    which is used by FiltaQuilla.
+  </p>
+  <p>
+    You can copy parts of the Email that you want to search
+    into the lower "test" field and then test the regular expression
+    on what kind of matches it finds.
+  </p>
+
+
+  <ul>
+    <li>
+      Exclude all HTML tags: this will remove tags such as &gt;p&lt; from 
+      the html parts of the email before matching the expression.
+    </li>
+    <li>
+      exclude global  &gt;style&lt; tags + CSS: remove the layout tag_thread_msg
+      and all contained rules within these blocks, to avoid false matches.      
+    </li>
+    <li>
+      exclude quotes: only looks at the content in the main email 
+      and omit any quoted content. (this does not work in plain text when
+      'raw mode' is selected)
+    </li>
+    <li>
+      collapse all whitespace: remove all new lines and spacs / tabs AND
+      replace them with single spaces 
+      (this does not work in plain text when 'raw mode' is selected)
+    </li>
+  </ul>
+
+
+<!--
+  <form id="regexForm">
+    <input type="text" id="regexInput" placeholder="Enter your regex" required />
+    <input type="text" id="testString" placeholder="Enter test string (optional)" />
+    <button type="submit">Test on regex101</button>
+  </form>
+-->
+
 	
   <a name="subject_regex"> </a>
   <p><strong>Subject Regex Match</strong></p>
@@ -417,7 +499,7 @@ issued to my Company "Song Craft Studios":</p>
        'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp', 'here');" 
        title="Mozilla RegEx syntax documentation" target="_blank">here</a>. 
     You can also test your search expressions at this
-    <a href="https://regex101.com/" target="_blank">Online Regex Tester</a> - just make sure you select
+    <a href="https://regex101.com/r/MfQBZT/1" target="_blank">Online Regex Tester</a> - just make sure you select
     the  <i>javascript</i> option on the left.     
   </p>
 	
@@ -557,6 +639,28 @@ issued to my Company "Song Craft Studios":</p>
 		<p>Sorry this is so complex, but at least now there is some available method to be used to setup complex filters with actions.
 		</p>
 	</blockquote>
+
+
+  <script>
+    document.getElementById('regexForm').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const regex = encodeURIComponent(document.getElementById('regexInput').value);
+      const testString = encodeURIComponent(document.getElementById('testString').value);
+      const targetUrl = "https://regex101.com/r/MfQBZT/1";
+      // Redirect to regex101 with prefilled values
+
+      if (window.confirm(
+        `Regex copied!\n` +
+        ` - Paste it into the Regular Expression field\n` +
+        ` - then insert example mail in the "Test String" field below `
+      )) {
+        // If the user clicks "OK", perform the redirect
+        window.location.href = targetUrl;
+      }       
+      
+    });
+  </script>
+
   
   <h3><strong>Future Functions</strong></h3>
 	
