@@ -643,7 +643,7 @@ END LICENSE BLOCK
     # [issue 275] Keyboard Shortcut conflict with 'AI Anywhere' extension
     # [issue 277] Fix duplicate filter names - avoid possible data loss when importing
     # [issue 282] Copying filters across to different server links the filters
-    # Compatibility with Tb 134
+    # Compatibility with Tb 134: fixed a problem with broken notification box (.shown removed)
 
 
   ============================================================================================================

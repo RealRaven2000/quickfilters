@@ -439,23 +439,18 @@ quickFilters.Util = {
       if (panel) {
         panel.openPopup(null, "after_start", 0, 0, false, false);
         let notificationBox = document.getElementById('quickFilterNotificationBox'),
-            priority = notificationBox.PRIORITY_WARNING_MEDIUM,
+            priority = notificationBox.PRIORITY_WARNING_MEDIUM;
             // appendNotification( label , value , image , priority , buttons, eventCallback )
-            notification;
-        if (notificationBox.shown) { // new notification format (Post Tb 99)
-          notification = await notificationBox.appendNotification( 
-            notificationKey, // "String identifier that can uniquely identify the type of the notification."
-            {
-              priority: priority,
-              label: text,
-              eventCallback: null
-            },
-            null // no buttons
-          );
-        } else {
-          notification = await notificationBox.appendNotification( text , null , icon , priority, null, null ); 
-        }
-        notificationBox.addEventListener('alertclose', function() { alert('test'); });
+        const notification = await notificationBox.appendNotification( 
+          notificationKey,
+          {
+            priority: priority,
+            label: text,
+            eventCallback: null
+          },
+          null // no buttons
+        );
+      notificationBox.addEventListener('alertclose', function() { alert('test'); });
         
         // setting img was removed in Tb91  
 
@@ -511,14 +506,8 @@ quickFilters.Util = {
     if (util.hasPremiumLicense())
       return true;
 		
-		let notifyBox,
-		    mainWin = util.getMail3PaneWindow();
-		if (typeof mainWin.specialTabs == 'object' && mainWin.specialTabs.msgNotificationBar) { // Tb 78
+		const mainWin = util.getMail3PaneWindow(),
 			notifyBox = mainWin.specialTabs.msgNotificationBar;
-		}
-		else if( typeof gNotification == 'object' && gNotification.notificationbox) { // Tb 68
-			notifyBox = gNotification.notificationbox;
-		}
 
 		let title = util.getBundleString("quickfilters.notification.proFeature.title", "Premium Feature"),
 		    theText = util.getBundleString("quickfilters.notification.premium.text",
@@ -588,25 +577,15 @@ quickFilters.Util = {
         notifyBox.removeNotification(item, false);
 		  const imgSrc = "chrome://quickfilters/content/skin/proFeature.png";
     
-			let newNotification;
-
-      if (notifyBox.shown) { // new notification format (Post Tb 99)
-        newNotification = await notifyBox.appendNotification( 
-          notificationKey, // "String identifier that can uniquely identify the type of the notification."
-          {
-            priority: notifyBox.PRIORITY_WARNING_HIGH,
-            label: theText,
-            eventCallback: null
-          },
-          nbox_buttons // no buttons
-        );
-      } else {
-        newNotification = await notifyBox.appendNotification( theText, 
-          notificationKey , 
-          imgSrc, 
-          notifyBox.PRIORITY_WARNING_HIGH, 
-          nbox_buttons ); // , eventCallback
-      }
+			const newNotification = await notifyBox.appendNotification( 
+        notificationKey, // "String identifier that can uniquely identify the type of the notification."
+        {
+          priority: notifyBox.PRIORITY_WARNING_HIGH,
+          label: theText,
+          eventCallback: null
+        },
+        nbox_buttons // no buttons
+      );
 
       let containerSelector;
       switch (newNotification?.messageImage?.tagName) {

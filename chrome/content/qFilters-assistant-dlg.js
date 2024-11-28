@@ -457,7 +457,7 @@ quickFilters.Assistant = {
     }
   },
   
-  setNextSteps: function setNextSteps(element) {
+  setNextSteps: function (element) {
     const getBundleString = quickFilters.Util.getBundleString.bind(quickFilters.Assistant),
           NextButton = this.NextButton,
           chkAutoRun = document.getElementById('chkAutoRun');
@@ -468,12 +468,11 @@ quickFilters.Assistant = {
             showList = prefs.getBoolPref("showListAfterCreateFilter"),
             AcceptLabel = "";
         chkAutoRun.disabled = showList;
-        if (!showEditor && !showList) { // qf.continueFilter.label
-          // relabel as [OK]
+        if (!showEditor && !showList) { 
           AcceptLabel = "OK";
-        }
-        else
+        } else {
           AcceptLabel = getBundleString('qf.button.createFilter', "Create Filter...");
+        }
         NextButton.label = AcceptLabel;
       } , 150
     );

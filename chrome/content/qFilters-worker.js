@@ -61,18 +61,10 @@ quickFilters.Worker = {
     
     util.logDebugOptional ("filters", "toggle_FilterMode(" + active + ")");
     let notifyBox, 
-        notification,
         imgSrc = "chrome://quickfilters/content/skin/filterTemplate.png";
 
     if (!silent) {
-      
-      if (typeof specialTabs == 'object' && specialTabs.msgNotificationBar) { // Tb 68
-        notifyBox = specialTabs.msgNotificationBar;
-      }
-      else if( typeof gNotification == 'object' && gNotification.notificationbox) { // Tb 68
-        notifyBox = gNotification.notificationbox;
-      }
-      
+      notifyBox = specialTabs.msgNotificationBar;
       let notificationKey = "quickfilters-filter";
       // do a tidy up in case this is already open!
       if (notifyBox) {
@@ -108,35 +100,26 @@ quickFilters.Worker = {
 
         if (notifyBox) {
           // button for disabling this notification in the future
-          let nbox_buttons = [
-              {
-                label: dontShow,
-                accessKey: null,
-                callback: function() { worker.showMessage(false); },
-                popup: null
-              }
-            ];
-          
-          if (notifyBox.shown) { // new notification format (Post Tb 99)
-            notification = await notifyBox.appendNotification( 
-              notificationKey, // "String identifier that can uniquely identify the type of the notification."
-              {
-                priority: notifyBox.PRIORITY_WARNING_MEDIUM,
-                label: theText,
-                eventCallback: eventType => { worker.onCloseNotification(eventType, notifyBox, notificationKey) } 
+          const nbox_buttons = [
+            {
+              label: dontShow,
+              accessKey: null,
+              callback: function () {
+                worker.showMessage(false);
               },
-              nbox_buttons // no buttons
-            );
-          }          
-          else {
-            notification = await notifyBox.appendNotification( theText,
-                notificationKey ,
-                imgSrc ,
-                notifyBox.PRIORITY_WARNING_MEDIUM,
-                nbox_buttons,
-                function(eventType) { worker.onCloseNotification(eventType, notifyBox, notificationKey); } // eventCallback
-                ); 
-          }
+              popup: null,
+            },
+          ];
+          
+          const notification = await notifyBox.appendNotification( 
+            notificationKey, // "String identifier that can uniquely identify the type of the notification."
+            {
+              priority: notifyBox.PRIORITY_WARNING_MEDIUM,
+              label: theText,
+              eventCallback: eventType => { worker.onCloseNotification(eventType, notifyBox, notificationKey) } 
+            },
+            nbox_buttons // no buttons
+          );
           
           let containerSelector;
           switch (notification?.messageImage?.tagName) {
@@ -177,7 +160,6 @@ quickFilters.Worker = {
     // replace setting FilterMode = active
     quickFilters.Util.notifyTools.notifyBackground({ func: "setAssistantMode", active });   // set Util.AssistantActive - stores assistant mode for all windows - only main windows need to listen to this one!
     quickFilters.Util.notifyTools.notifyBackground({ func: "setAssistantButton", active }); // reflect in UI of all Assistant buttons
-
     
     if (!silent) {
       removeOldNotification(notifyBox, active, 'quickfilters-filter');
