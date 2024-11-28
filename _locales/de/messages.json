@@ -1177,7 +1177,7 @@
     "message": "Name der benutzerdefinierten Vorlage:"
   },
   "quickfilters.prompt.fixDuplicates": {
-    "message": "Wir haben Duplikate für die folgenden Filter gefunden.\nMöchten Sie diese beheben und trotzdem importieren?"
+    "message": "Es wurden Duplikate für die folgenden Filter gefunden.\nMöchten Sie diese beheben und trotzdem importieren?"
   },
   "quickfilters.promptDontRepeat": {
     "message": "Diese Warnung in Zukunft nicht anzeigen."
