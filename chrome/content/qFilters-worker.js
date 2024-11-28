@@ -234,8 +234,9 @@ quickFilters.Worker = {
           setTimeout(function() { 
             let quickFiltersList = win.quickFilters.List;
             quickFiltersList.selectFilter(targetFilter); 
-            if (isAlphabetic)
-              quickFiltersList.moveAlphabetic(targetFilter); 
+            if (isAlphabetic) {
+              quickFiltersList.moveAlphabetic(targetFilter); // async!
+            }
           });
         }
         else {

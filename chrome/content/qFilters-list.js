@@ -211,8 +211,7 @@ quickFilters.List = {
   
   sort: function sort(evt) {
 		const util = quickFilters.Util;
-    let filtersList = this.FilterList, // Tb / SM
-        list = this.FilterListElement,
+    let list = this.FilterListElement,
         count = this.getSelectedCount(list);
     if (count < 2) {
 			let wrn = util.getBundleString("quickfilters.sort.warning.selectMultiple", 
@@ -602,12 +601,13 @@ quickFilters.List = {
 		}
 	},
 	
-	pasteFilters: function (isSort) {
+	pasteFilters: async function (isSort) {
 		const util = quickFilters.Util,
 		      prefs = quickFilters.Preferences,
 		      Ci = Components.interfaces;
 		let clpFilters = this.clipboardList,
         sortedFiltersList,
+        isClone = false,
 		    isInsert = false,
 		    isRemove = false,
         isMove = false,
@@ -627,7 +627,12 @@ quickFilters.List = {
           util.popupAlert(wrn, 'quickFilters', 'fugue-clipboard-exclamation.png');
           return;
         }
-			}
+			} else {
+        // copy across accounts.
+        if (!isMove) {
+          isClone = true; // make completely new filter avoid [issue 282]
+        }
+      }
 			if (!this.clipboardServer.server.canHaveFilters) {
 				let msg = util.getBundleString('quickfilters.createFilter.warning.canNotHaveFilters',
 					'The account {1} does not support filters!');
@@ -700,7 +705,20 @@ quickFilters.List = {
           // PASTE: NOW INSERT
           if (!isSort) {
             let filter = clpFilters[i].QueryInterface(Ci.nsIMsgFilter);
-            filtersList.insertFilterAt(index++, filter); 
+            if (!isClone) {
+              filtersList.insertFilterAt(index++, filter); 
+            } else {
+              // [issue 282]
+              let newFilter = filtersList.createFilter(filter.filterName);
+              // 2. iterate all actions & clone them
+              quickFilters.Util.copyActions(filter, newFilter);
+              // 3. iterate all conditions & clone them
+              await quickFilters.Util.copyTerms(filter, newFilter);
+              newFilter.filterType = filter.filterType;
+              newFilter.enabled = filter.enabled;
+              newFilter.filterDesc = filter.filterDesc;
+              filtersList.insertFilterAt(index++, newFilter); 
+            }
           }
 				}
         // SORT: when sorting we insert after *all* cut clipboard filters have been removed
@@ -784,7 +802,7 @@ quickFilters.List = {
         || list.currentIndex === this.getListElementCount(list)-1);
   } ,
 
-  onLoadFilterList: function onLoadFilterList(evt) {
+  onLoadFilterList: function(evt) {
     const util = quickFilters.Util,
 					qList = quickFilters.List;
     function removeElement(el) {
@@ -876,10 +894,11 @@ quickFilters.List = {
         // trying timeout because this causes call to rebuildFilterList with exception "gSearchBox is null"
         // maybe document isn't ready at this stage?
         setTimeout(
-          function() {
+          async function() {
             qList.selectFilter(targetFilter);
-            if (isAlphabetic)
-              qList.moveAlphabetic(targetFilter);
+            if (isAlphabetic) {
+              await qList.moveAlphabetic(targetFilter);
+            }
             if (typeof getFirstFolder != 'undefined') {
               // set run folder:
               let rootFolder = qList.CurrentFolder.rootFolder,
@@ -902,7 +921,7 @@ quickFilters.List = {
     util.logDebugOptional('filterList', 'onLoadFilterList() complete.');
   } ,
 	
-	moveAlphabetic: function moveAlphabetic(targetFilter) {
+	moveAlphabetic: async function (targetFilter) {
 		let filtersList = this.FilterList,
 				numFilters = filtersList.filterCount;;
 		this.cutFilters();
@@ -911,7 +930,7 @@ quickFilters.List = {
 				// select filter insert on the filter that is alphabetically later
 				this.selectFilter(filtersList.getFilterAt(idx));
 				// paste new filter before that
-				this.pasteFilters(false);
+				await this.pasteFilters(false);
 				this.selectFilter(targetFilter);
 				break;
 			}

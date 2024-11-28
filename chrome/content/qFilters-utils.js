@@ -1812,7 +1812,7 @@ quickFilters.Util = {
     }
   } ,
 
-  editCustomTemplates: function editCustomTemplates() {
+  editCustomTemplates: function () {
       const util = quickFilters.Util;
       try {
         // we need to select Local Folders
@@ -1906,8 +1906,7 @@ quickFilters.Util = {
           if (prefs.getBoolPref("showListAfterCreateFilter")) {
             quickFilters.Worker.openFilterList(true, localFolder, targetFilter);
           }
-        }
-        else {
+        } else {
           // [Cancel]
           filtersList.removeFilterAt(0);
         }
