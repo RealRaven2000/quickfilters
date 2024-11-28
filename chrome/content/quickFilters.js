@@ -642,6 +642,8 @@ END LICENSE BLOCK
     # [issue 265] Change Request for userChromeJS script: Message Filters Toolbar Implementation - insert above filterHeader (not any 1st hbox)
     # [issue 275] Keyboard Shortcut conflict with 'AI Anywhere' extension
     # [issue 277] Fix duplicate filter names - avoid possible data loss when importing
+    # [issue 282] Copying filters across to different server links the filters
+    # Compatibility with Tb 134
 
 
   ============================================================================================================

@@ -1403,7 +1403,7 @@
     "message": "Read the detailed change log here (English only):"
   },
   "whats-new-list": {
-    "message": "{L1} Maintenance fix: in the previous version merging filters failed [issue 262]{L2}{L1} quickFilters is now compatible with Thunderbird 130. {L2} {L1} In Thunderbrid 128, the sliding notification shown during assistant in some cases did lead to the function not working correctly; this is working correctly now [issue 258]{L2} {L1} Improved dark theme support to message filters window. {L2}{L1} Fixed: Cut and Paste filters didn't work in Thunderbird 128 {L2} {L1} Fixed 'always pushed' look on menu button. [issue 223] {L2}"
+    "message": "{L1} Fixed: Copying filters across to different server links the filters [issue 282]{L2} {L1} Change Request for userChromeJS script: Message Filters Toolbar Implementation - insert above filterHeader [issue 265]{L2}{L1} Removed Keyboard Shortcut conflict with 'AI Anywhere' extension. [issue 277] {L2} {L1} Made compatible with Thunderbird 134 {L2}"
   },
   "window-title": {
     "description": "page title. first placeholder will be replaced with Add-on name",
