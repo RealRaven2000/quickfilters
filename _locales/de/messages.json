@@ -288,7 +288,7 @@
   },
   "pricing.section.hint": {
     "message": "Hinweis: Der Preis variiert je nach Lizenzmodell, Land, Mehrwertsteuersatz, aktuellen Rabatten oder bereits gekauften Lizenzen."
-  },  
+  },
   "pricing.title": {
     "message": "Preise"
   },
@@ -389,7 +389,7 @@
   },
   "qf.description.splash": {
     "message": "Neuigkeiten und wichtige Änderungen anzeigen, übersetzt in Ihre Sprache:"
-  },  
+  },
   "qf.donate.tooltip": {
     "message": "Unterstützen Sie quickFilters!"
   },
@@ -585,13 +585,13 @@
   "qf.label.quickfilters": {
     "message": "quickFilters"
   },
-  "qf.label.removeOwnAddresses" : {
+  "qf.label.removeOwnAddresses": {
     "message": "Meine eigenen E-Mail-Adressen entfernen (empfohlen)"
   },
-  "qf.label.removeOwnAddresses.tip" : {
+  "qf.label.removeOwnAddresses.tip": {
     "message": "Das Extrahieren eigener E-Mail-Adressen mit dem Assistenten kann zu unerwünschten Ergebnissen führen, daher entfernen Adresssuchbegriffe diese automatisch."
   },
-  "qf.label.shortcut.challenge" : {
+  "qf.label.shortcut.challenge": {
     "message": "Nachfragen, bevor Filter ausserhalb eines Posteingangs ausgeführt werden"
   },
   "qf.label.shortcut.runFolder": {
@@ -681,7 +681,7 @@
   "qf.templates.customTemplate.new": {
     "message": "Neues Template…"
   },
-  "qf.templates.customTemplate.restricted" : {
+  "qf.templates.customTemplate.restricted": {
     "message": "Sie benötigen eine gültige quickFilters Pro-Lizenz, um neue benutzerdefinierte Vorlagen für den Assistenten zu erstellen."
   },
   "qf.templates.customTemplate.tooltip": {
@@ -1176,6 +1176,9 @@
   "quickfilters.prompt.customTemplateName": {
     "message": "Name der benutzerdefinierten Vorlage:"
   },
+  "quickfilters.prompt.fixDuplicates": {
+    "message": "Wir haben Duplikate für die folgenden Filter gefunden.\nMöchten Sie diese beheben und trotzdem importieren?"
+  },
   "quickfilters.promptDontRepeat": {
     "message": "Diese Warnung in Zukunft nicht anzeigen."
   },
@@ -1265,7 +1268,7 @@
   "renew-your-license": {
     "message": "Erneuern Sie Ihre Lizenz."
   },
-  "restart-app" : {
+  "restart-app": {
     "message": "Starten Sie $application$ neu, um diese Option zu aktivieren.",
     "placeholders": {
       "application": {
@@ -1280,7 +1283,7 @@
       "folderName": {
         "content": "$1"
       }
-    }    
+    }
   },
   "runFilters.selection.confirm": {
     "message": "Filter für ausgewählte E-Mails ausführen?"
@@ -1328,7 +1331,7 @@
         "example": "50%"
       }
     }
-  },   
+  },
   "support-preference": {
     "message": "Dies ist die bevorzugte Methode zur Unterstützung von $addonName$.",
     "placeholders": {

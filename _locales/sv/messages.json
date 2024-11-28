@@ -288,7 +288,7 @@
   },
   "pricing.section.hint": {
     "message": "Obs: Priset varierar beroende på licensmodell, land, momssats, aktuella rabatter eller redan köpta licenser."
-  },  
+  },
   "pricing.title": {
     "message": "Prissättning"
   },
@@ -389,7 +389,7 @@
   },
   "qf.description.splash": {
     "message": "Visa nyheter och viktiga förändringar, lokaliserade på ditt språk:"
-  },  
+  },
   "qf.donate.tooltip": {
     "message": "Stöd utvecklingen av quickFilters!"
   },
@@ -585,13 +585,13 @@
   "qf.label.quickfilters": {
     "message": "quickFilters"
   },
-  "qf.label.removeOwnAddresses" : {
+  "qf.label.removeOwnAddresses": {
     "message": "Ta bort mina egna e-postadresser (rekommenderas)"
   },
-  "qf.label.removeOwnAddresses.tip" : {
+  "qf.label.removeOwnAddresses.tip": {
     "message": "Att extrahera dina egna e-postadresser med hjälp av assistenten kan leda till oönskade resultat, så adresssöktermer tar bort dessa automatiskt."
   },
-  "qf.label.shortcut.challenge" : {
+  "qf.label.shortcut.challenge": {
     "message": "Bekräfta innan du kör filter när du inte är i en inkorg"
   },
   "qf.label.shortcut.runFolder": {
@@ -681,7 +681,7 @@
   "qf.templates.customTemplate.new": {
     "message": "Skapa ny..."
   },
-  "qf.templates.customTemplate.restricted" : {
+  "qf.templates.customTemplate.restricted": {
     "message": "Du behöver en giltig quickFilters Pro-licens för att skapa nya anpassade mallar för assistenten."
   },
   "qf.templates.customTemplate.tooltip": {
@@ -1176,6 +1176,9 @@
   "quickfilters.prompt.customTemplateName": {
     "message": "Namn på anpassad mall:"
   },
+  "quickfilters.prompt.fixDuplicates": {
+    "message": "Vi hittade duplicerade filter för följande objekt.\nVill du åtgärda detta och ändå importera?"
+  },
   "quickfilters.promptDontRepeat": {
     "message": "Visa inte denna varning igen."
   },
@@ -1189,7 +1192,7 @@
         "content": "quickFilters Pro"
       }
     }
-  },   
+  },
   "quickfilters.replyWithTemplate.label": {
     "message": "Svara med mall"
   },
@@ -1264,7 +1267,7 @@
   "renew-your-license": {
     "message": "Förnya din licens."
   },
-  "restart-app" : {
+  "restart-app": {
     "message": "Starta om $application$ för att aktivera det här alternativet.",
     "placeholders": {
       "application": {
@@ -1279,7 +1282,7 @@
       "folderName": {
         "content": "$1"
       }
-    }    
+    }
   },
   "runFilters.selection.confirm": {
     "message": "Köra filter på utvalda mail?"
@@ -1324,7 +1327,7 @@
         "example": "50%"
       }
     }
-  },   
+  },
   "subjectCompleteExtract": {
     "message": "Infoga alltid hela ämnesraden."
   },

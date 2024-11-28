@@ -288,7 +288,7 @@
   },
   "pricing.section.hint": {
     "message": "Lưu ý: Giá khác nhau tùy thuộc vào kiểu giấy phép, quốc gia, thuế suất VAT, chiết khấu hiện tại hoặc giấy phép đã mua."
-  },  
+  },
   "pricing.title": {
     "message": "Prissättning"
   },
@@ -389,7 +389,7 @@
   },
   "qf.description.splash": {
     "message": "Hiển thị tin tức và những thay đổi quan trọng, được bản địa hóa bằng ngôn ngữ của bạn:"
-  },  
+  },
   "qf.donate.tooltip": {
     "message": "Trợ giúp sự phát triển của quickFilters!"
   },
@@ -585,13 +585,13 @@
   "qf.label.quickfilters": {
     "message": "quickFilters"
   },
-  "qf.label.removeOwnAddresses" : {
+  "qf.label.removeOwnAddresses": {
     "message": "Xóa địa chỉ email của riêng tôi (được khuyến nghị)"
   },
-  "qf.label.removeOwnAddresses.tip" : {
+  "qf.label.removeOwnAddresses.tip": {
     "message": "Việc trích xuất địa chỉ email của riêng bạn bằng trợ lý có thể dẫn đến kết quả không mong muốn, vì vậy, các cụm từ tìm kiếm địa chỉ sẽ tự động xóa chúng."
   },
-  "qf.label.shortcut.challenge" : {
+  "qf.label.shortcut.challenge": {
     "message": "Xác nhận trước khi thực thi bộ lọc khi không ở trong Hộp thư đến"
   },
   "qf.label.shortcut.runFolder": {
@@ -681,7 +681,7 @@
   "qf.templates.customTemplate.new": {
     "message": "Tạo mới…"
   },
-  "qf.templates.customTemplate.restricted" : {
+  "qf.templates.customTemplate.restricted": {
     "message": "Bạn cần có giấy phép quickFilters Pro hợp lệ để tạo các mẫu tùy chỉnh mới cho trợ lý."
   },
   "qf.templates.customTemplate.tooltip": {
@@ -1176,6 +1176,9 @@
   "quickfilters.prompt.customTemplateName": {
     "message": "Name of Custom Template:"
   },
+  "quickfilters.prompt.fixDuplicates": {
+    "message": "Chúng tôi đã tìm thấy các bộ lọc trùng lặp bên dưới.\nSửa lỗi này và vẫn nhập chứ?"
+  },
   "quickfilters.promptDontRepeat": {
     "message": "Do not show this warning again."
   },
@@ -1189,7 +1192,7 @@
         "content": "quickFilters Pro"
       }
     }
-  },  
+  },
   "quickfilters.replyWithTemplate.label": {
     "message": "Trả lời bằng Thư mẫu"
   },
@@ -1264,7 +1267,7 @@
   "renew-your-license": {
     "message": "Gia hạn giấy phép của bạn."
   },
-  "restart-app" : {
+  "restart-app": {
     "message": "Khởi động lại $application$ để kích hoạt tùy chọn này.",
     "placeholders": {
       "application": {
@@ -1279,7 +1282,7 @@
       "folderName": {
         "content": "$1"
       }
-    }    
+    }
   },
   "runFilters.selection.confirm": {
     "message": "Chạy bộ lọc trên các thư đã chọn?"
@@ -1324,7 +1327,7 @@
         "example": "50%"
       }
     }
-  },   
+  },
   "subjectCompleteExtract": {
     "message": "Luôn truy xuất dòng tiêu đề hoàn chỉnh."
   },

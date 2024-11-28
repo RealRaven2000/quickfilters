@@ -8,36 +8,35 @@
   "account.label": {
     "message": "帳戶："
   },
-  "active-version-info" : {
+  "active-version-info": {
     "message": "您現在在Thunderbird $appVer$ 上運行{boldStart}版本 $addonVer$ {boldEnd}。",
     "description": "The boldStart and boldEnd parts will be replaced with html tags",
     "placeholders": {
-      "addonVer" : {
-        "content" : "$1", 
-        "example" : "Version 1.1"
+      "addonVer": {
+        "content": "$1",
+        "example": "Version 1.1"
       },
-      "appVer" : {
-        "content" : "$2",
-        "example" : "78.0b4"
+      "appVer": {
+        "content": "$2",
+        "example": "78.0b4"
       }
-      
     }
-  },  
-  "addon-authors-struggle" : {
-    "message" : "為了繼續發揮作用，我們的附加組件開發人員現在需要資助修復和重寫所需的資源，以便我們的用戶可以繼續從我們提供的功能中受益。"
-  } ,
+  },
+  "addon-authors-struggle": {
+    "message": "為了繼續發揮作用，我們的附加組件開發人員現在需要資助修復和重寫所需的資源，以便我們的用戶可以繼續從我們提供的功能中受益。"
+  },
   "btn-extend-license": {
-    "message" : "我想將我的執照延長一年"
-  } ,
+    "message": "我想將我的執照延長一年"
+  },
   "btn-renew-license": {
-    "message" : "我想續簽我的許可證"
-  } ,
+    "message": "我想續簽我的許可證"
+  },
   "btn-want-a-license": {
-    "message" : "我想購買許可證"
-  } ,
-  "btn-want-to-donate" : {
-    "message" : "我想提供一次捐款。"
-  } ,
+    "message": "我想購買許可證"
+  },
+  "btn-want-to-donate": {
+    "message": "我想提供一次捐款。"
+  },
   "buyDomainLicense.button": {
     "message": "購買域名許可證"
   },
@@ -109,17 +108,17 @@
   },
   "chkNotify.RunFilter": {
     "message": "手動運行過濾器時顯示通知。"
-  },  
-  "chkPeriodically.label":{
+  },
+  "chkPeriodically.label": {
     "message": "定期運行"
   },
-  "chkPeriodically.tooltip":{
+  "chkPeriodically.tooltip": {
     "message": "定期運行過濾器"
   },
-  "chkRunManual.label":{
+  "chkRunManual.label": {
     "message": "手動運行"
   },
-  "chkShowEditor.label":{
+  "chkShowEditor.label": {
     "message": "創建過濾器後打開編輯器"
   },
 
@@ -135,9 +134,9 @@
   "chkWhenArchiving.label": {
     "message": "存檔時"
   },
-  "cost-of-independence" : {
-    "message" : "軟件開發花費時間和金錢-與許多平台應用程序不同，附加組件不是由大公司編寫的，也不是由Mozilla以任何方式贊助的。"
-  } ,
+  "cost-of-independence": {
+    "message": "軟件開發花費時間和金錢-與許多平台應用程序不同，附加組件不是由大公司編寫的，也不是由Mozilla以任何方式贊助的。"
+  },
   "createdBy": {
     "message": "創建者："
   },
@@ -153,12 +152,12 @@
   "domainLicense.validate": {
     "message": "請確保您在公司的電子郵件地址中*準確地*輸入域名（@ 符號*之後*的部分），因為它將用於授權您的用戶的電子郵件地址。"
   },
-  "donate" : {
-    "message" : "一次性捐款幫助。"
-  },   
-  "donate-heading" : {
-    "message" : "捐贈幫助！"
-  } ,
+  "donate": {
+    "message": "一次性捐款幫助。"
+  },
+  "donate-heading": {
+    "message": "捐贈幫助！"
+  },
   "donate.label": {
     "message": "捐贈"
   },
@@ -171,9 +170,9 @@
   "enterLicenseKey.tooltip": {
     "message": "輸入通過電子郵件發送給您的許可證密鑰代碼。"
   },
-  "extend-your-license" : {
-    "message" : "考慮將您的許可證延長一年。"
-  },  
+  "extend-your-license": {
+    "message": "考慮將您的許可證延長一年。"
+  },
   "extensionDescription": {
     "message": "通過拖放郵件並分析其屬性，快速動態生成郵件過濾器規則。",
     "description": "Description of the extension."
@@ -202,20 +201,20 @@
     "message": "$addonName$ 已成功安裝",
     "description": "page heading. first placeholder will be replaced with Add-on name",
     "placeholders": {
-      "addonName" : {
-        "content" : "$1", 
-        "example" : "quickFilters"
-      }    
+      "addonName": {
+        "content": "$1",
+        "example": "quickFilters"
+      }
     }
   },
   "heading-updated": {
     "message": "$addonName$ 已成功更新",
     "description": "page heading. first placeholder will be replaced with Add-on name",
     "placeholders": {
-      "addonName" : {
-        "content" : "$1", 
-        "example" : "quickFilters"
-      }    
+      "addonName": {
+        "content": "$1",
+        "example": "quickFilters"
+      }
     }
   },
   "homepage": {
@@ -224,16 +223,16 @@
   "intro": {
     "message": "quickFilters Pro 的許可證可讓您在一年內使用所有高級功能。 它還使我們能夠進一步支持和發展該產品，並將其變成更棒的東西。"
   },
-  "label-remind-me" : {
+  "label-remind-me": {
     "message": "在$countDays$天后再次提醒我。",
     "placeholders": {
-      "countDays" : {
-        "content" : "$1", 
-        "example" : "10"
-      }    
-    }    
+      "countDays": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
   },
-  "license-is-extended" : {
+  "license-is-extended": {
     "message": "感謝您最近延長許可證或捐贈。 當您幫助將來對該插件進行驗證時，只需關閉此窗口即可。",
     "description": "Shown if license expires more than a year from now"
   },
@@ -246,20 +245,20 @@
   "licenseWindow.title": {
     "message": "quickFilters Pro 許可證"
   },
-  "mozillas-basic-platform" : {
-    "message" : "Mozilla僅提供一個基本平台，用於向您（最終用戶）交付我們的軟件。 如果我們需要向我們的用戶付款或提供支持，則不能通過addons.thunderbird.net進行操作-這不是內置付費界面或許可證管理（如iTunes或Google Play）的“應用商店”。"
-  } ,
+  "mozillas-basic-platform": {
+    "message": "Mozilla僅提供一個基本平台，用於向您（最終用戶）交付我們的軟件。 如果我們需要向我們的用戶付款或提供支持，則不能通過addons.thunderbird.net進行操作-這不是內置付費界面或許可證管理（如iTunes或Google Play）的“應用商店”。"
+  },
   "notificationTitle": {
     "message": "Click notification",
     "description": "Title of the click notification."
-  },  
+  },
   "ongoing-work": {
     "message": "將 $addonName$ 轉換為新編程模型的更改花費了數週時間，而且成本很高。 下一個2023版本將有更多更改。 有了這樣複雜的附加組件，昂貴的工作就變得不可避免。 請幫助我們。",
     "placeholders": {
-      "addonName" : {
-        "content" : "$1", 
-        "example" : "quickFilters"
-      }    
+      "addonName": {
+        "content": "$1",
+        "example": "quickFilters"
+      }
     }
   },
   "pane1.title": {
@@ -273,16 +272,16 @@
   },
   "pricing.section.hint": {
     "message": "注意：價格因許可證型號、國家/地區、增值稅率、當前折扣或已購買的許可證而異。"
-  },  
+  },
   "pricing.title": {
     "message": "價錢"
   },
-  "purchase-a-license" : {
-    "message" : "購買許可證。"
-  }, 
-  "purchase-heading" : {
-    "message" : "購買許可證！"
-  }, 
+  "purchase-a-license": {
+    "message": "購買許可證。"
+  },
+  "purchase-heading": {
+    "message": "購買許可證！"
+  },
   "qf.assistant.ignoreFolders": {
     "message": "助手應該忽略這些文件夾類型..."
   },
@@ -365,7 +364,7 @@
   },
   "qf.description.splash": {
     "message": "以您的語言本地化顯示新聞和重要變化:"
-  },  
+  },
   "qf.donate.tooltip": {
     "message": "支持quickFilters的開發！"
   },
@@ -546,13 +545,13 @@
   "qf.label.quickfilters": {
     "message": "quickFilters"
   },
-  "qf.label.removeOwnAddresses" : {
+  "qf.label.removeOwnAddresses": {
     "message": "刪除我自己的電子郵件地址（推薦）"
   },
-  "qf.label.removeOwnAddresses.tip" : {
+  "qf.label.removeOwnAddresses.tip": {
     "message": "使用助手提取您自己的電子郵件地址可能會導致不良結果，因此地址搜索詞會自動刪除這些地址。"
   },
-  "qf.label.shortcut.challenge" : {
+  "qf.label.shortcut.challenge": {
     "message": "不在收件箱中時執行過濾器之前詢問"
   },
   "qf.label.shortcut.runFolder": {
@@ -642,7 +641,7 @@
   "qf.templates.customTemplate.new": {
     "message": "創建新的…"
   },
-  "qf.templates.customTemplate.restricted" : {
+  "qf.templates.customTemplate.restricted": {
     "message": "您需要有效的 quickFilters Pro 許可證才能為助手創建新的自定義模板。"
   },
   "qf.templates.customTemplate.tooltip": {
@@ -809,7 +808,7 @@
   },
   "quickfilters.copyMessage.label": {
     "message": "複製消息至"
-  },  
+  },
   "quickfilters.createFilter.warning.canNotHaveFilters": {
     "message": "帳戶 ({1}) 不能有過濾器。"
   },
@@ -893,7 +892,7 @@
   },
   "quickfilters.customHeader.To": {
     "message": "到"
-  },  
+  },
   "quickfilters.customHeader.defaultActionTip": {
     "message": "quickFilters 助手會自動添加一個操作。 請將默認操作“將優先級設置為正常”作為佔位符。"
   },
@@ -995,7 +994,7 @@
   },
   "quickfilters.notification.donate": {
     "message": "捐贈"
-  },  
+  },
   "quickfilters.notification.premium.btn.extendLicense": {
     "message": "延長許可證"
   },
@@ -1092,6 +1091,9 @@
   "quickfilters.prompt.customTemplateName": {
     "message": "自定義模板名稱："
   },
+  "quickfilters.prompt.fixDuplicates": {
+    "message": "我們發現以下的篩選器有重複。\n是否修復並繼續匯入？"
+  },
   "quickfilters.promptDontRepeat": {
     "message": "不要再顯示此警告。"
   },
@@ -1105,7 +1107,7 @@
         "content": "quickFilters Pro"
       }
     }
-  },  
+  },
   "quickfilters.replyWithTemplate.label": {
     "message": "用模板回复"
   },
@@ -1175,10 +1177,10 @@
       }
     }
   },
-  "renew-your-license" : {
-    "message" : "續訂您的許可證。"
-  },  
-  "restart-app" : {
+  "renew-your-license": {
+    "message": "續訂您的許可證。"
+  },
+  "restart-app": {
     "message": "重新啟動 $application$ 以激活此選項。",
     "placeholders": {
       "application": {
@@ -1193,12 +1195,12 @@
       "folderName": {
         "content": "$1"
       }
-    }    
+    }
   },
   "runFilters.selection.confirm": {
     "message": "對選定的郵件運行過濾器？"
   },
-  "special-offer-content" : {
+  "special-offer-content": {
     "message": "現在是獲得許可證的最佳機會，因為慶祝quickFilters成立9週年的quickFilters Pro許可證價格降低了 {boldStart} $reduction$ {boldEnd}！ 此特別優惠將持續到 {boldStart}$expirydate${boldEnd}.",
     "placeholders": {
       "expirydate": {
@@ -1214,10 +1216,10 @@
   "special-offer-expiry": {
     "message": "9月12日"
   },
-  "special-offer-head" : {
+  "special-offer-head": {
     "message": "請幫助quickFilters繼續！"
-  } ,  
-  "special-offer-intro" : {
+  },
+  "special-offer-intro": {
     "message": "{boldStart}尊敬的{name} {boldEnd}：您現在可以為面向未來的$addonName$提供幫助。 為了跟上 Thunderbird 的變化，我依賴於{boldStart}您的幫助{boldEnd}！",
     "placeholders": {
       "addonName": {
@@ -1225,7 +1227,7 @@
         "example": "quickFilters"
       }
     }
-  } ,
+  },
   "special-offer-renew": {
     "message": "立即續訂您的許可證並節省{boldStart}$reduction${boldEnd}！ 此特別優惠有效期至 {boldStart}$expirydate${boldEnd}。",
     "placeholders": {
@@ -1238,56 +1240,56 @@
         "example": "50%"
       }
     }
-  },     
+  },
   "subjectCompleteExtract": {
     "message": "始終插入完整的主題行。"
   },
-  "support-preference" : {
+  "support-preference": {
     "message": "這是支持$addonName$的首選方式。",
     "placeholders": {
-      "addonName" : {
-        "content" : "$1", 
-        "example" : "quickFilters"
-      }    
+      "addonName": {
+        "content": "$1",
+        "example": "quickFilters"
+      }
     }
-  }, 
-  "support-suggestion" : {
+  },
+  "support-suggestion": {
     "message": "為了使$addonName$保持功能性和活躍性，請務必這樣做：",
     "placeholders": {
-      "addonName" : {
-        "content" : "$1", 
-        "example" : "quickFilters"
-      }    
+      "addonName": {
+        "content": "$1",
+        "example": "quickFilters"
+      }
     }
   },
   "thanks-for-updating-intro": {
     "message": "感謝您更新 $addonName$.",
     "placeholders": {
-      "addonName" : {
-        "content" : "$1", 
-        "example" : "quickFilters"
-      }    
+      "addonName": {
+        "content": "$1",
+        "example": "quickFilters"
+      }
     }
-  }, 
+  },
   "thanks-for-installing-intro": {
     "message": "感謝您安裝 $addonName$.",
     "placeholders": {
-      "addonName" : {
-        "content" : "$1", 
-        "example" : "quickFilters"
-      }    
-    }
-  },    
-  "time-and-effort": { 
-    "message": "$addonName$ 需要進行不斷的更改，以保持與Mozilla平台的兼容性。 我一直在努力為Thunderbird的未來版本保留盡可能多的功能。",
-    "placeholders": {
-      "addonName" : {
-        "content" : "$1", 
-        "example" : "quickFilters"
-      }    
+      "addonName": {
+        "content": "$1",
+        "example": "quickFilters"
+      }
     }
   },
-  "translated-by-google" : {
+  "time-and-effort": {
+    "message": "$addonName$ 需要進行不斷的更改，以保持與Mozilla平台的兼容性。 我一直在努力為Thunderbird的未來版本保留盡可能多的功能。",
+    "placeholders": {
+      "addonName": {
+        "content": "$1",
+        "example": "quickFilters"
+      }
+    }
+  },
+  "translated-by-google": {
     "message": "谷歌提供的翻譯",
     "description": "disclaimer."
   },
@@ -1301,15 +1303,15 @@
     "message": "版本："
   },
 
-  "whats-new-btn" : {
+  "whats-new-btn": {
     "message": "什麼是新的？"
-  }, 
-  "whats-new-head" : {
+  },
+  "whats-new-head": {
     "message": "重要變化"
   },
-  "whats-new-intro" : {
-    "message": "在此處閱讀詳細的更改日誌（僅英語）：" 
-  },  
+  "whats-new-intro": {
+    "message": "在此處閱讀詳細的更改日誌（僅英語）："
+  },
   "whats-new-list": {
     "message": "{L1} 維護修復：在以前的版本中合併過濾器失敗 [issue 262]{L2}{L1} quickFilters 現在與 Thunderbird 130 兼容。 {L2} {L1} 在 Thunderbird 128 中，助理期間顯示的滑動通知在某些情況下導致功能無法正常運行；現在已正確運行 [issue 258]{L2} {L1} 改進了郵件篩選器窗口的暗主題支持。 {L2}{L1} 修復：在 Thunderbird 128 中剪切和粘貼篩選器不起作用 {L2} {L1} 修復了菜單按鈕上的“始終按下”外觀。 [issue 223] {L2}"
   },
@@ -1317,10 +1319,10 @@
     "message": "歡迎使用 $addonName$",
     "description": "page title. first placeholder will be replaced with Add-on name",
     "placeholders": {
-      "addonName" : {
-        "content" : "$1", 
-        "example" : "quickFilters"
-      }    
+      "addonName": {
+        "content": "$1",
+        "example": "quickFilters"
+      }
     }
   },
   "yearlyLicense.premiumFeatures": {

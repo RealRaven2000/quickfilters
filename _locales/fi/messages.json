@@ -8,36 +8,35 @@
   "account.label": {
     "message": "Valitse tili:"
   },
-  "active-version-info" : {
+  "active-version-info": {
     "message": "Käytät nyt  {boldStart} versiota $addonVer$ {boldEnd} Thunderbird $appVer$ lla. ",
     "description": "The boldStart and boldEnd parts will be replaced with html tags",
     "placeholders": {
-      "addonVer" : {
-        "content" : "$1", 
-        "example" : "Version 1.1"
+      "addonVer": {
+        "content": "$1",
+        "example": "Version 1.1"
       },
-      "appVer" : {
-        "content" : "$2",
-        "example" : "78.0b4"
+      "appVer": {
+        "content": "$2",
+        "example": "78.0b4"
       }
-      
     }
-  },  
-  "addon-authors-struggle" : {
-    "message" : "Jatkaaksemme hyödyllisyyttä meidän lisäosakehittäjien on nyt rahoitettava korjaamiseen ja uudelleenkirjoittamiseen tarvittavat resurssit, jotta käyttäjät voivat edelleen hyötyä tarjoamistamme toiminnoista."
-  } ,
+  },
+  "addon-authors-struggle": {
+    "message": "Jatkaaksemme hyödyllisyyttä meidän lisäosakehittäjien on nyt rahoitettava korjaamiseen ja uudelleenkirjoittamiseen tarvittavat resurssit, jotta käyttäjät voivat edelleen hyötyä tarjoamistamme toiminnoista."
+  },
   "btn-extend-license": {
-    "message" : "Haluan jatkaa lisenssini vuodella"
-  } ,
+    "message": "Haluan jatkaa lisenssini vuodella"
+  },
   "btn-renew-license": {
-    "message" : "Haluan uusia lisenssin"
-  } ,
+    "message": "Haluan uusia lisenssin"
+  },
   "btn-want-a-license": {
-    "message" : "Haluan ostaa lisenssin"
-  } ,
-  "btn-want-to-donate" : {
-    "message" : "Haluan auttaa kertalahjoituksella."
-  } ,
+    "message": "Haluan ostaa lisenssin"
+  },
+  "btn-want-to-donate": {
+    "message": "Haluan auttaa kertalahjoituksella."
+  },
   "buyDomainLicense.button": {
     "message": "Osta verkkotunnuksen käyttöoikeus"
   },
@@ -149,9 +148,9 @@
   "chkWhenArchiving.label": {
     "message": "Kun arkistoidaan"
   },
-  "cost-of-independence" : {
-    "message" : "Ohjelmistokehitys maksaa aikaa ja rahaa - toisin kuin monet alustasovellukset, suuret yritykset eivät ole kirjoittaneet lisäosia, eikä Mozilla tue niitä millään tavalla."
-  } ,
+  "cost-of-independence": {
+    "message": "Ohjelmistokehitys maksaa aikaa ja rahaa - toisin kuin monet alustasovellukset, suuret yritykset eivät ole kirjoittaneet lisäosia, eikä Mozilla tue niitä millään tavalla."
+  },
   "createdBy": {
     "message": "Luonut:"
   },
@@ -167,12 +166,12 @@
   "domainLicense.validate": {
     "message": "Varmista, että annat verkkotunnuksen * täsmälleen sellaisena kuin se on * yrityksesi sähköpostiosoitteissa (osassa * @ -merkin jälkeen), koska sitä käytetään valtuuttamaan käyttäjien sähköpostiosoitteet."
   },
-  "donate" : {
-    "message" : "Auta kertalahjoituksella."
-  },   
-  "donate-heading" : {
-    "message" : "Apua lahjoittamalla!"
-  } ,
+  "donate": {
+    "message": "Auta kertalahjoituksella."
+  },
+  "donate-heading": {
+    "message": "Apua lahjoittamalla!"
+  },
   "donate.label": {
     "message": "Lahjoittaa"
   },
@@ -185,9 +184,9 @@
   "enterLicenseKey.tooltip": {
     "message": "Kirjoita sähköpostitse lähetetty lisenssiavain-koodi."
   },
-  "extend-your-license" : {
-    "message" : "Harkitse lisenssin jatkamista vuodella."
-  },  
+  "extend-your-license": {
+    "message": "Harkitse lisenssin jatkamista vuodella."
+  },
   "extensionDescription": {
     "message": "Luo nopeasti sähköpostisuodattimen säännöt lennossa vetämällä ja pudottamalla sähköposteja ja analysoimalla niiden ominaisuuksia.",
     "description": "Description of the extension."
@@ -215,20 +214,20 @@
     "message": "Asennus $addonName$ onnistui",
     "description": "page heading. first placeholder will be replaced with Add-on name",
     "placeholders": {
-      "addonName" : {
-        "content" : "$1", 
-        "example" : "quickFilters"
-      }    
+      "addonName": {
+        "content": "$1",
+        "example": "quickFilters"
+      }
     }
   },
   "heading-updated": {
     "message": "$addonName$ päivitetty onnistuneesti",
     "description": "page heading. first placeholder will be replaced with Add-on name",
     "placeholders": {
-      "addonName" : {
-        "content" : "$1", 
-        "example" : "quickFilters"
-      }    
+      "addonName": {
+        "content": "$1",
+        "example": "quickFilters"
+      }
     }
   },
   "homepage": {
@@ -237,19 +236,19 @@
   "intro": {
     "message": "quickFilters Pro-Lisenssi antaa sinun käyttää kaikkia premium-ominaisuuksia vuoden ajan. Sen avulla voimme myös tukea ja kasvattaa tuotetta edelleen ja tehdä siitä vielä mahtavamman."
   },
-  "label-remind-me" : {
+  "label-remind-me": {
     "message": "Muistuta minua uudelleen $countDays$ päivän kuluttua.",
     "placeholders": {
-      "countDays" : {
-        "content" : "$1", 
-        "example" : "10"
-      }    
-    }    
+      "countDays": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
   },
   "lastName.label": {
     "message": "Sukunimi:"
   },
-  "license-is-extended" : {
+  "license-is-extended": {
     "message": "Kiitos, että lisenssit äskettäin tai olet lahjoittanut. Koska olet auttanut todistamaan tämän lisäosan tulevaisuudessa, voit yksinkertaisesti sulkea tämän ikkunan.",
     "description": "Shown if license expires more than a year from now"
   },
@@ -262,9 +261,9 @@
   "licenseWindow.title": {
     "message": "quickFilters Pro-lisenssi"
   },
-  "mozillas-basic-platform" : {
-    "message" : "Mozilla tarjoaa vain perusalustan ohjelmistojemme toimittamiseksi sinulle, loppukäyttäjille. Jos meidän on pyydettävä käyttäjiltämme maksua tai tukea, emme voi tehdä tätä osoitteesta addons.thunderbird.net - se ei ole '' sovelluskauppa '', jossa on sisäänrakennetut paywallit tai lisenssien hallinta, kuten iTunes tai Google Play."
-  } ,
+  "mozillas-basic-platform": {
+    "message": "Mozilla tarjoaa vain perusalustan ohjelmistojemme toimittamiseksi sinulle, loppukäyttäjille. Jos meidän on pyydettävä käyttäjiltämme maksua tai tukea, emme voi tehdä tätä osoitteesta addons.thunderbird.net - se ei ole '' sovelluskauppa '', jossa on sisäänrakennetut paywallit tai lisenssien hallinta, kuten iTunes tai Google Play."
+  },
   "notificationTitle": {
     "message": "Click notification",
     "description": "Title of the click notification."
@@ -272,10 +271,10 @@
   "ongoing-work": {
     "message": "Muutokset $addonName$ muuntamiseksi uudeksi ohjelmointimalliksi kesti viikkoja ja olivat kalliita. Seuraavaa versiota 2023 on paljon enemmän. Tällaisen monimutkaisen lisäosan avulla kalliista työstä tulee väistämätöntä. Auta meitä tässä.",
     "placeholders": {
-      "addonName" : {
-        "content" : "$1", 
-        "example" : "quickFilters"
-      }    
+      "addonName": {
+        "content": "$1",
+        "example": "quickFilters"
+      }
     }
   },
   "pane1.title": {
@@ -289,16 +288,16 @@
   },
   "pricing.section.hint": {
     "message": "Huomautus: Hinta vaihtelee lisenssimallin, maan, ALV-prosentin, nykyisten alennusten tai jo ostettujen lisenssien mukaan."
-  },  
+  },
   "pricing.title": {
     "message": "Hinnoittelu"
   },
-  "purchase-a-license" : {
-    "message" : "Osta lisenssi."
-  }, 
-  "purchase-heading" : {
-    "message" : "Lisenssin ostaminen!"
-  }, 
+  "purchase-a-license": {
+    "message": "Osta lisenssi."
+  },
+  "purchase-heading": {
+    "message": "Lisenssin ostaminen!"
+  },
   "qf.assistant.ignoreFolders": {
     "message": "Assistantin pitäisi ohittaa nämä kansiot…"
   },
@@ -390,7 +389,7 @@
   },
   "qf.description.splash": {
     "message": "Näytä uutisia ja tärkeitä muutoksia kielelläsi:"
-  },  
+  },
   "qf.donate.tooltip": {
     "message": "Tuki quickFilters-kehitykselle!"
   },
@@ -586,13 +585,13 @@
   "qf.label.quickfilters": {
     "message": "quickFilters"
   },
-  "qf.label.removeOwnAddresses" : {
+  "qf.label.removeOwnAddresses": {
     "message": "Poista omat sähköpostiosoitteeni (suositus)"
   },
-  "qf.label.removeOwnAddresses.tip" : {
+  "qf.label.removeOwnAddresses.tip": {
     "message": "Omien sähköpostiosoitteiden purkaminen avustajan avulla voi johtaa ei-toivottuihin tuloksiin, joten osoitehakutermit poistavat ne automaattisesti."
   },
-  "qf.label.shortcut.challenge" : {
+  "qf.label.shortcut.challenge": {
     "message": "Vahvista ennen suodattimien suorittamista, kun et ole Saapuneet-kansiossa"
   },
   "qf.label.shortcut.runFolder": {
@@ -682,7 +681,7 @@
   "qf.templates.customTemplate.new": {
     "message": "Luo uusi…"
   },
-  "qf.templates.customTemplate.restricted" : {
+  "qf.templates.customTemplate.restricted": {
     "message": "Tarvitset voimassa olevan quickFilters Pro -lisenssin luodaksesi uusia mukautettuja malleja avustajalle."
   },
   "qf.templates.customTemplate.tooltip": {
@@ -1177,6 +1176,9 @@
   "quickfilters.prompt.customTemplateName": {
     "message": "Mukautetun mallin nimi:"
   },
+  "quickfilters.prompt.fixDuplicates": {
+    "message": "Löysimme seuraaville suodattimille duplikaatteja.\nKorjataanko tämä ja tuodaanko joka tapauksessa?"
+  },
   "quickfilters.promptDontRepeat": {
     "message": "Älä näytä tätä varoitusta uudelleen."
   },
@@ -1190,7 +1192,7 @@
         "content": "quickFilters Pro"
       }
     }
-  },  
+  },
   "quickfilters.replyWithTemplate.label": {
     "message": "Vastaa mallilla"
   },
@@ -1262,10 +1264,10 @@
   "quickfiltersToolbarButton.tooltip": {
     "message": "Suodattimen luominen avustaja; työkalut suodattimiin"
   },
-  "renew-your-license" : {
-    "message" : "Uusi lisenssi."
-  },  
-  "restart-app" : {
+  "renew-your-license": {
+    "message": "Uusi lisenssi."
+  },
+  "restart-app": {
     "message": "Aktivoi tämä vaihtoehto käynnistämällä $application$ uudelleen.",
     "placeholders": {
       "application": {
@@ -1280,12 +1282,12 @@
       "folderName": {
         "content": "$1"
       }
-    }    
+    }
   },
   "runFilters.selection.confirm": {
     "message": "Suoritetaanko suodattimet valituille viesteille?"
   },
-  "special-offer-content" : {
+  "special-offer-content": {
     "message": "Nyt on paras mahdollisuus hankkia lisenssi, koska quickFilters Pro -lisenssin hinta on {boldStart} $reduction$ alempi {boldEnd} juhlimaan 9 vuotta quickFilters! Tämä erikoistarjous on saatavilla {boldStart}$expirydate${boldEnd} asti.",
     "placeholders": {
       "expirydate": {
@@ -1301,10 +1303,10 @@
   "special-offer-expiry": {
     "message": "12. syyskuuta"
   },
-  "special-offer-head" : {
+  "special-offer-head": {
     "message": "Auttakaa quickFilters jatkaaksesi!"
-  } ,  
-  "special-offer-intro" : {
+  },
+  "special-offer-intro": {
     "message": "{boldStart} Hyvä {name} {boldEnd}, Voit nyt auttaa tulevaisuudenkestäviä $addonName$. Pysyn ajan tasalla Thunderbirdin muutoksista luotan {boldStart}apuun{boldEnd}!",
     "placeholders": {
       "addonName": {
@@ -1312,7 +1314,7 @@
         "example": "quickFilters"
       }
     }
-  } ,
+  },
   "special-offer-renew": {
     "message": "Uusi lisenssi nyt ja säästä {boldStart}$reduction${boldEnd}! Tämä erikoistarjous on voimassa {boldStart} $expirydate$ {boldEnd} asti.",
     "placeholders": {
@@ -1325,26 +1327,26 @@
         "example": "50%"
       }
     }
-  },   
+  },
   "subjectCompleteExtract": {
     "message": "Lisää aina koko aiherivi."
   },
-  "support-preference" : {
+  "support-preference": {
     "message": "Tämä on ensisijainen tapa tukea $addonName$.",
     "placeholders": {
-      "addonName" : {
-        "content" : "$1", 
-        "example" : "quickFilters"
-      }    
+      "addonName": {
+        "content": "$1",
+        "example": "quickFilters"
+      }
     }
-  }, 
-  "support-suggestion" : {
+  },
+  "support-suggestion": {
     "message": "Jotta $addonName$ pysyisi toiminnassa ja elossa, tee se elintärkeäksi palvelukseksi:",
     "placeholders": {
-      "addonName" : {
-        "content" : "$1", 
-        "example" : "quickFilters"
-      }    
+      "addonName": {
+        "content": "$1",
+        "example": "quickFilters"
+      }
     }
   },
   "testDrive": {
@@ -1353,31 +1355,31 @@
   "thanks-for-installing-intro": {
     "message": "Kiitos $addonName$ -asennuksesta.",
     "placeholders": {
-      "addonName" : {
-        "content" : "$1", 
-        "example" : "quickFilters"
-      }    
+      "addonName": {
+        "content": "$1",
+        "example": "quickFilters"
+      }
     }
-  },  
+  },
   "thanks-for-updating-intro": {
     "message": "Kiitos $addonName$ päivittämisestä.",
     "placeholders": {
-      "addonName" : {
-        "content" : "$1", 
-        "example" : "quickFilters"
-      }    
+      "addonName": {
+        "content": "$1",
+        "example": "quickFilters"
+      }
     }
   },
-  "time-and-effort": { 
+  "time-and-effort": {
     "message": "$addonName$ vaatii jatkuvia muutoksia, jotta se pysyy yhteensopivana Mozilla-alustan kanssa. Pyrin jatkuvasti säilyttämään mahdollisimman paljon toiminnallisuutta tuleville Thunderbird-versioille.",
     "placeholders": {
-      "addonName" : {
-        "content" : "$1", 
-        "example" : "quickFilters"
-      }    
+      "addonName": {
+        "content": "$1",
+        "example": "quickFilters"
+      }
     }
   },
-  "translated-by-google" : {
+  "translated-by-google": {
     "message": "käännökset tarjoaa google",
     "description": "disclaimer."
   },
@@ -1390,15 +1392,15 @@
   "version": {
     "message": "Versio:"
   },
-  "whats-new-btn" : {
+  "whats-new-btn": {
     "message": "Mikä on uutta?"
-  },   
-  "whats-new-head" : {
+  },
+  "whats-new-head": {
     "message": "Tärkeät muutokset"
-  },  
-  "whats-new-intro" : {
-    "message": "Lue yksityiskohtainen muutosloki täältä (vain englanniksi):" 
-  },  
+  },
+  "whats-new-intro": {
+    "message": "Lue yksityiskohtainen muutosloki täältä (vain englanniksi):"
+  },
   "whats-new-list": {
     "message": "{L1} Huoltokorjaus: edellisessä versiossa suodattimien yhdistäminen epäonnistui [issue 262]{L2} {L1} quickFilters on nyt yhteensopiva Thunderbird 130:n kanssa. {L2} {L1} Thunderbird 128:ssa liukuva ilmoitus, joka näytettiin avustajan aikana, johti joissakin tapauksissa toiminnon virheelliseen toimintaan; tämä toimii nyt oikein [issue 258]{L2} {L1} Parannettu tumman teeman tuki viestisuodattimien ikkunassa. {L2}{L1} Korjattu: Leikkaaminen ja liittäminen suodattimet eivät toimineet Thunderbird 128:ssa {L2} {L1} Korjattu: 'Aina painettu' ulkoasu valikkopainikkeessa. [issue 223] {L2}"
   },
@@ -1406,10 +1408,10 @@
     "message": "Tervetuloa osoitteeseen $addonName$",
     "description": "page title. first placeholder will be replaced with Add-on name",
     "placeholders": {
-      "addonName" : {
-        "content" : "$1", 
-        "example" : "quickFilters"
-      }    
+      "addonName": {
+        "content": "$1",
+        "example": "quickFilters"
+      }
     }
   },
   "yearlyLicense.premiumFeatures": {

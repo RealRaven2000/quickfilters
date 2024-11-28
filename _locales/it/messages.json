@@ -262,7 +262,7 @@
     "message": "Licenza di quickFilters Pro"
   },
   "mozillas-basic-platform": {
-	"message": "Le modifiche per convertire $addonName$ nel nuovo modello di programmazione hanno richiesto settimane e sono state costose. Ci sono molte altre modifiche previste per la prossima versione del 2022. Con una estensione così complessa, è inevitabile che il lavoro diventi economicamente assai oneroso. Per favore aiutateci!"
+    "message": "Le modifiche per convertire $addonName$ nel nuovo modello di programmazione hanno richiesto settimane e sono state costose. Ci sono molte altre modifiche previste per la prossima versione del 2022. Con una estensione così complessa, è inevitabile che il lavoro diventi economicamente assai oneroso. Per favore aiutateci!"
   },
   "ongoing-work": {
     "message": "Le modifiche per convertire $addonName$ nel nuovo modello di programmazione hanno richiesto settimane e sono state costose. Ci sono molte altre modifiche previste per la prossima versione. Con una estensione così complessa,  è inevitabile che il lavoro diventi economicamente assai oneroso. Per favore aiutateci!",
@@ -284,7 +284,7 @@
   },
   "pricing.section.hint": {
     "message": "Nota: il prezzo varia a seconda del tipo di licenza, del paese, dell'aliquota IVA, degli sconti in corso o di licenze già acquistate."
-  },  
+  },
   "pricing.title": {
     "message": "Prezzi"
   },
@@ -385,7 +385,7 @@
   },
   "qf.description.splash": {
     "message": "Visualizza notizie e cambiamenti importanti tradotti nella tua lingua:"
-  },  
+  },
   "qf.donate.tooltip": {
     "message": "Supporta lo sviluppo di quickFilters!"
   },
@@ -584,13 +584,13 @@
   "qf.label.quickfilters": {
     "message": "quickFilters"
   },
-  "qf.label.removeOwnAddresses" : {
+  "qf.label.removeOwnAddresses": {
     "message": "Rimuove i propri indirizzi di posta elettronica (consigliato)"
   },
-  "qf.label.removeOwnAddresses.tip" : {
+  "qf.label.removeOwnAddresses.tip": {
     "message": "Recuperare i propri indirizzi di posta utilizzando la “Procedura guidata” può portare a risultati indesiderati. Pertanto la ricerca di stringhe negli indirizzi di posta rimuove automaticamente i propri."
   },
-  "qf.label.shortcut.challenge" : {
+  "qf.label.shortcut.challenge": {
     "message": "Chiede anche conferma prima di eseguire i filtri con la scorciatoia se non si è in una cartella “Posta in arrivo”"
   },
   "qf.label.shortcut.runFolder": {
@@ -680,7 +680,7 @@
   "qf.templates.customTemplate.new": {
     "message": "Crea nuova…"
   },
-  "qf.templates.customTemplate.restricted" : {
+  "qf.templates.customTemplate.restricted": {
     "message": "Per creare nuove tipologie personalizzate di “Procedura guidata” è necessaria una licenza quickFilters Pro valida."
   },
   "qf.templates.customTemplate.tooltip": {
@@ -1175,6 +1175,9 @@
   "quickfilters.prompt.customTemplateName": {
     "message": "Nome dellla tipologia personalizzata:"
   },
+  "quickfilters.prompt.fixDuplicates": {
+    "message": "Abbiamo trovato duplicati per i seguenti filtri.\nCorreggere e importare comunque?"
+  },
   "quickfilters.promptDontRepeat": {
     "message": "Non mostrare più questo avviso."
   },
@@ -1188,7 +1191,7 @@
         "content": "quickFilters Pro"
       }
     }
-  },  
+  },
   "quickfilters.replyWithTemplate.label": {
     "message": "Rispondi con una tipologia"
   },
@@ -1264,7 +1267,7 @@
   "renew-your-license": {
     "message": "Rinnova la tua licenza."
   },
-  "restart-app" : {
+  "restart-app": {
     "message": "Riavvia $application$ per attivare questa opzione.",
     "placeholders": {
       "application": {
@@ -1279,7 +1282,7 @@
       "folderName": {
         "content": "$1"
       }
-    }    
+    }
   },
   "runFilters.selection.confirm": {
     "message": "Eseguire filtri sui messaggi selezionati?"
@@ -1327,7 +1330,7 @@
         "example": "50%"
       }
     }
-  },   
+  },
   "support-preference": {
     "message": "Questo è il modo migliore per supportare $addonName$.",
     "placeholders": {

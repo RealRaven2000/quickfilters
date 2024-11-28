@@ -1175,6 +1175,9 @@
   "quickfilters.prompt.customTemplateName": {
     "message": "Name of Custom Template:"
   },
+  "quickfilters.prompt.fixDuplicates": {
+    "message": "We found duplicates for the following filters below.\nFix this and import anyway?"
+  },
   "quickfilters.promptDontRepeat": {
     "message": "Do not show this warning again."
   },

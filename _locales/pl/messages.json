@@ -8,36 +8,35 @@
   "account.label": {
     "message": "Valitse tili:"
   },
-  "active-version-info" : {
+  "active-version-info": {
     "message": "Używasz teraz {boldStart} wersji $addonVer$ {boldEnd} na Thunderbird $appVer$.",
     "description": "The boldStart and boldEnd parts will be replaced with html tags",
     "placeholders": {
-      "addonVer" : {
-        "content" : "$1", 
-        "example" : "Version 1.1"
+      "addonVer": {
+        "content": "$1",
+        "example": "Version 1.1"
       },
-      "appVer" : {
-        "content" : "$2",
-        "example" : "78.0b4"
+      "appVer": {
+        "content": "$2",
+        "example": "78.0b4"
       }
-      
     }
-  },  
-  "addon-authors-struggle" : {
-    "message" : "Aby nadal być użytecznym, my, programiści dodatków, musimy teraz finansować zasoby potrzebne do naprawy i przepisywania, aby nasi użytkownicy mogli nadal korzystać z oferowanych przez nas funkcji."
-  } ,
+  },
+  "addon-authors-struggle": {
+    "message": "Aby nadal być użytecznym, my, programiści dodatków, musimy teraz finansować zasoby potrzebne do naprawy i przepisywania, aby nasi użytkownicy mogli nadal korzystać z oferowanych przez nas funkcji."
+  },
   "btn-extend-license": {
-    "message" : "Chcę przedłużyć moją licencję o rok"
-  } ,
+    "message": "Chcę przedłużyć moją licencję o rok"
+  },
   "btn-renew-license": {
-    "message" : "Chcę odnowić licencję"
-  } ,
+    "message": "Chcę odnowić licencję"
+  },
   "btn-want-a-license": {
-    "message" : "Chcę kupić licencję"
-  } ,
-  "btn-want-to-donate" : {
-    "message" : "Chcę pomóc w sprawie jednorazowej darowizny."
-  } ,
+    "message": "Chcę kupić licencję"
+  },
+  "btn-want-to-donate": {
+    "message": "Chcę pomóc w sprawie jednorazowej darowizny."
+  },
   "buyDomainLicense.button": {
     "message": "Kup licencję dla domeny"
   },
@@ -149,9 +148,9 @@
   "chkWhenArchiving.label": {
     "message": "Podczas archiwizacji"
   },
-  "cost-of-independence" : {
-    "message" : "Tworzenie oprogramowania kosztuje czas i pieniądze - w przeciwieństwie do wielu aplikacji platformowych, dodatki nie są pisane przez duże korporacje ani w żaden sposób nie są sponsorowane przez Mozillę."
-  } ,
+  "cost-of-independence": {
+    "message": "Tworzenie oprogramowania kosztuje czas i pieniądze - w przeciwieństwie do wielu aplikacji platformowych, dodatki nie są pisane przez duże korporacje ani w żaden sposób nie są sponsorowane przez Mozillę."
+  },
   "createdBy": {
     "message": "Stworzone przez:"
   },
@@ -167,12 +166,12 @@
   "domainLicense.validate": {
     "message": "Upewnij się, że wpisujesz nazwę domeny *dokładnie tak, jak jest* w adresach e-mail Twojej firmy (część *po* znaku @), ponieważ będzie ona używana do autoryzacji adresów e-mail użytkowników."
   },
-  "donate" : {
-    "message" : "Pomóż w postaci jednorazowej darowizny."
+  "donate": {
+    "message": "Pomóż w postaci jednorazowej darowizny."
   },
-  "donate-heading" : {
-    "message" : "Pomóż poprzez darowiznę!"
-  } ,
+  "donate-heading": {
+    "message": "Pomóż poprzez darowiznę!"
+  },
   "donate.label": {
     "message": "Podarować"
   },
@@ -185,9 +184,9 @@
   "enterLicenseKey.tooltip": {
     "message": "Wprowadź kod klucza licencyjnego wysłany do Ciebie e-mailem."
   },
-  "extend-your-license" : {
-    "message" : "Rozważ przedłużenie licencji o rok."
-  },  
+  "extend-your-license": {
+    "message": "Rozważ przedłużenie licencji o rok."
+  },
   "extensionDescription": {
     "message": "Szybko generuj reguły filtrowania poczty w locie, przeciągając i upuszczając wiadomości oraz analizując ich atrybuty.",
     "description": "Description of the extension."
@@ -215,20 +214,20 @@
     "message": "Pomyślnie zainstalowano $addonName$",
     "description": "page heading. first placeholder will be replaced with Add-on name",
     "placeholders": {
-      "addonName" : {
-        "content" : "$1", 
-        "example" : "quickFilters"
-      }    
+      "addonName": {
+        "content": "$1",
+        "example": "quickFilters"
+      }
     }
   },
   "heading-updated": {
     "message": "$addonName$ Zaktualizowano pomyślnie",
     "description": "page heading. first placeholder will be replaced with Add-on name",
     "placeholders": {
-      "addonName" : {
-        "content" : "$1", 
-        "example" : "quickFilters"
-      }    
+      "addonName": {
+        "content": "$1",
+        "example": "quickFilters"
+      }
     }
   },
   "homepage": {
@@ -237,19 +236,19 @@
   "intro": {
     "message": "Licencja na quickFilters Pro zapewnia dostęp do wszystkich funkcji premium przez rok. Umożliwia nam również dalsze wspieranie i rozwijanie produktu oraz przekształcanie go w coś jeszcze bardziej niesamowitego."
   },
-  "label-remind-me" : {
+  "label-remind-me": {
     "message": "Przypomnij mi ponownie za $countDays$ dni.",
     "placeholders": {
-      "countDays" : {
-        "content" : "$1", 
-        "example" : "10"
-      }    
-    }    
+      "countDays": {
+        "content": "$1",
+        "example": "10"
+      }
+    }
   },
   "lastName.label": {
     "message": "Nazwisko:"
   },
-  "license-is-extended" : {
+  "license-is-extended": {
     "message": "Dziękujemy za niedawne przedłużenie licencji lub przekazanie darowizny. Ponieważ pomogłeś w przygotowaniu tego dodatku w przyszłości, możesz po prostu zamknąć to okno.",
     "description": "Shown if license expires more than a year from now"
   },
@@ -262,9 +261,9 @@
   "licenseWindow.title": {
     "message": "Licencja quickFilters Pro"
   },
-  "mozillas-basic-platform" : {
-    "message" : "Mozilla zapewnia jedynie podstawową platformę do dostarczania naszego oprogramowania użytkownikom końcowym. Jeśli musimy poprosić naszych użytkowników o płatność lub wsparcie, nie możemy tego zrobić z addons.thunderbird.net - nie jest to „sklep z aplikacjami” z wbudowanymi paywallami lub zarządzaniem licencjami, jak iTunes czy Google Play."
-  } ,
+  "mozillas-basic-platform": {
+    "message": "Mozilla zapewnia jedynie podstawową platformę do dostarczania naszego oprogramowania użytkownikom końcowym. Jeśli musimy poprosić naszych użytkowników o płatność lub wsparcie, nie możemy tego zrobić z addons.thunderbird.net - nie jest to „sklep z aplikacjami” z wbudowanymi paywallami lub zarządzaniem licencjami, jak iTunes czy Google Play."
+  },
   "notificationTitle": {
     "message": "Click notification",
     "description": "Title of the click notification."
@@ -272,10 +271,10 @@
   "ongoing-work": {
     "message": "Modyfikacje mające na celu konwersję $addonName$ do nowego modelu programowania zajęły tygodnie i były kosztowne. W następnej wersji 2023 jest znacznie więcej zmian. Z tak złożonym dodatkiem, kosztowna praca staje się nieunikniona. Proszę, pomóż nam w tym.",
     "placeholders": {
-      "addonName" : {
-        "content" : "$1", 
-        "example" : "quickFilters"
-      }    
+      "addonName": {
+        "content": "$1",
+        "example": "quickFilters"
+      }
     }
   },
   "pane1.title": {
@@ -289,16 +288,16 @@
   },
   "pricing.section.hint": {
     "message": "Uwaga: Cena różni się w zależności od modelu licencji, kraju, stawki VAT, aktualnych rabatów lub już zakupionych licencji."
-  },  
+  },
   "pricing.title": {
     "message": "cennik"
   },
-  "purchase-a-license" : {
-    "message" : "Kup licencję."
-  }, 
-  "purchase-heading" : {
-    "message" : "Kupowanie licencji!"
-  }, 
+  "purchase-a-license": {
+    "message": "Kup licencję."
+  },
+  "purchase-heading": {
+    "message": "Kupowanie licencji!"
+  },
   "qf.assistant.ignoreFolders": {
     "message": "Asystent powinien zignorować te foldery…"
   },
@@ -390,7 +389,7 @@
   },
   "qf.description.splash": {
     "message": "Wyświetlaj wiadomości i ważne zmiany zlokalizowane w Twoim języku:"
-  },  
+  },
   "qf.donate.tooltip": {
     "message": "Wspieraj rozwój quickFilters!"
   },
@@ -586,13 +585,13 @@
   "qf.label.quickfilters": {
     "message": "quickFilters"
   },
-  "qf.label.removeOwnAddresses" : {
+  "qf.label.removeOwnAddresses": {
     "message": "Usuń moje własne adresy e-mail (zalecane)"
   },
-  "qf.label.removeOwnAddresses.tip" : {
+  "qf.label.removeOwnAddresses.tip": {
     "message": "Wyodrębnianie własnych adresów e-mail za pomocą asystenta może prowadzić do niepożądanych wyników, więc hasła wyszukiwania adresów usuwają je automatycznie."
   },
-  "qf.label.shortcut.challenge" : {
+  "qf.label.shortcut.challenge": {
     "message": "Potwierdź przed uruchomieniem filtrów, gdy nie znajdujesz się w skrzynce odbiorczej"
   },
   "qf.label.shortcut.runFolder": {
@@ -682,7 +681,7 @@
   "qf.templates.customTemplate.new": {
     "message": "Tworzyć nowe…"
   },
-  "qf.templates.customTemplate.restricted" : {
+  "qf.templates.customTemplate.restricted": {
     "message": "Aby utworzyć nowe niestandardowe szablony dla asystenta, potrzebujesz ważnej licencji quickFilters Pro."
   },
   "qf.templates.customTemplate.tooltip": {
@@ -1177,6 +1176,9 @@
   "quickfilters.prompt.customTemplateName": {
     "message": "Nazwa szablonu niestandardowego:"
   },
+  "quickfilters.prompt.fixDuplicates": {
+    "message": "Znaleźliśmy duplikaty dla poniższych filtrów.\nNaprawić to i mimo to zaimportować?"
+  },
   "quickfilters.promptDontRepeat": {
     "message": "Nie pokazuj więcej tego ostrzeżenia."
   },
@@ -1190,7 +1192,7 @@
         "content": "quickFilters Pro"
       }
     }
-  },  
+  },
   "quickfilters.replyWithTemplate.label": {
     "message": "Odpowiedz za pomocą szablonu"
   },
@@ -1262,10 +1264,10 @@
   "quickfiltersToolbarButton.tooltip": {
     "message": "Asystent tworzenia filtrów; narzędzia do filtrów"
   },
-  "renew-your-license" : {
-    "message" : "Odnów licencję."
-  },  
-  "restart-app" : {
+  "renew-your-license": {
+    "message": "Odnów licencję."
+  },
+  "restart-app": {
     "message": "Uruchom ponownie $application$, aby aktywować tę opcję.",
     "placeholders": {
       "application": {
@@ -1280,12 +1282,12 @@
       "folderName": {
         "content": "$1"
       }
-    }    
+    }
   },
   "runFilters.selection.confirm": {
     "message": "Czy uruchomić filtry w wybranych wiadomościach e-mail?"
   },
-  "special-offer-content" : {
+  "special-offer-content": {
     "message": "Teraz jest najlepsza okazja do zdobycia licencji, ponieważ istnieje {boldStart} $reduction$ zniżki {boldEnd} na cenę licencji quickFilters Pro z okazji 9-lecia quickFilters! Ta oferta specjalna będzie dostępna do {boldStart} $expirydate$ {boldEnd}.",
     "placeholders": {
       "expirydate": {
@@ -1301,10 +1303,10 @@
   "special-offer-expiry": {
     "message": "12 września"
   },
-  "special-offer-head" : {
+  "special-offer-head": {
     "message": "Pomóż quickFilters, aby kontynuować!"
-  } ,  
-  "special-offer-intro" : {
+  },
+  "special-offer-intro": {
     "message": "{boldStart} Witaj {name} {boldEnd}, Możesz teraz pomóc zabezpieczyć $addonName$ na przyszłość. Aby być na bieżąco ze zmianami w Thunderbirdzie, polegam na {boldStart}Twojej pomocy{boldEnd}!",
     "placeholders": {
       "addonName": {
@@ -1312,7 +1314,7 @@
         "example": "quickFilters"
       }
     }
-  } ,
+  },
   "special-offer-renew": {
     "message": "Odnów swoją licencję teraz i zaoszczędź {boldStart}$reduction${boldEnd}! Ta oferta specjalna będzie dostępna do {boldStart}$expirydate${boldEnd}.",
     "placeholders": {
@@ -1325,56 +1327,56 @@
         "example": "50%"
       }
     }
-  },   
+  },
   "subjectCompleteExtract": {
     "message": "Zawsze wstawiaj cały temat."
   },
-  "support-preference" : {
+  "support-preference": {
     "message": "Jest to preferowany sposób obsługi $addonName$.",
     "placeholders": {
-      "addonName" : {
-        "content" : "$1", 
-        "example" : "quickFilters"
-      }    
+      "addonName": {
+        "content": "$1",
+        "example": "quickFilters"
+      }
     }
-  }, 
-  "support-suggestion" : {
+  },
+  "support-suggestion": {
     "message": "Aby $addonName$ działało i żyło, zrób to bardzo ważną przysługę:",
     "placeholders": {
-      "addonName" : {
-        "content" : "$1", 
-        "example" : "quickFilters"
-      }    
+      "addonName": {
+        "content": "$1",
+        "example": "quickFilters"
+      }
     }
   },
   "thanks-for-updating-intro": {
     "message": "Dziękujemy za aktualizację $addonName$.",
     "placeholders": {
-      "addonName" : {
-        "content" : "$1", 
-        "example" : "quickFilters"
-      }    
+      "addonName": {
+        "content": "$1",
+        "example": "quickFilters"
+      }
     }
   },
   "thanks-for-installing-intro": {
     "message": "Dziękujemy za zainstalowanie programu $addonName$.",
     "placeholders": {
-      "addonName" : {
-        "content" : "$1", 
-        "example" : "quickFilters"
-      }    
+      "addonName": {
+        "content": "$1",
+        "example": "quickFilters"
+      }
     }
   },
-  "time-and-effort": { 
+  "time-and-effort": {
     "message": "$addonName$ wymaga ciągłych zmian, aby pozostać kompatybilnym z platformą Mozilla. Nieustannie pracuję nad zachowaniem jak największej funkcjonalności dla przyszłych wersji Thunderbirda.",
     "placeholders": {
-      "addonName" : {
-        "content" : "$1", 
-        "example" : "quickFilters"
-      }    
+      "addonName": {
+        "content": "$1",
+        "example": "quickFilters"
+      }
     }
   },
-  "translated-by-google" : {
+  "translated-by-google": {
     "message": "tłumaczenia dostarczone przez Google",
     "description": "disclaimer."
   },
@@ -1387,10 +1389,10 @@
   "version": {
     "message": "Wersja:"
   },
-  "whats-new-btn" : {
+  "whats-new-btn": {
     "message": "Co nowego?"
-  }, 
-  "whats-new-head" : {
+  },
+  "whats-new-head": {
     "message": "Ważne zmiany"
   },
   "whats-new-intro": {
@@ -1403,10 +1405,10 @@
     "message": "Witamy w $addonName$",
     "description": "page title. first placeholder will be replaced with Add-on name",
     "placeholders": {
-      "addonName" : {
-        "content" : "$1", 
-        "example" : "quickFilters"
-      }    
+      "addonName": {
+        "content": "$1",
+        "example": "quickFilters"
+      }
     }
   },
   "yearlyLicense.premiumFeatures": {

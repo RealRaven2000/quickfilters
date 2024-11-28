@@ -288,7 +288,7 @@
   },
   "pricing.section.hint": {
     "message": "注: 価格は、ライセンス モデル、国、VAT 率、現在の割引、または購入済みのライセンスによって異なります。"
-  },  
+  },
   "pricing.title": {
     "message": "価格"
   },
@@ -389,7 +389,7 @@
   },
   "qf.description.splash": {
     "message": "あなたの言語にローカライズされたニュースと重要な変更を表示します。"
-  },  
+  },
   "qf.donate.tooltip": {
     "message": "quickFilters の開発を支援します"
   },
@@ -585,13 +585,13 @@
   "qf.label.quickfilters": {
     "message": "quickFilters"
   },
-  "qf.label.removeOwnAddresses" : {
+  "qf.label.removeOwnAddresses": {
     "message": "自分のメールアドレスを削除する（推奨）"
   },
-  "qf.label.removeOwnAddresses.tip" : {
+  "qf.label.removeOwnAddresses.tip": {
     "message": "アシスタントを使用して自分のメールアドレスを抽出すると、望ましくない結果が生じる可能性があるため、アドレス検索用語はこれらを自動的に削除します。"
   },
-  "qf.label.shortcut.challenge" : {
+  "qf.label.shortcut.challenge": {
     "message": "受信トレイにないときにフィルターを実行する前に確認する"
   },
   "qf.label.shortcut.runFolder": {
@@ -681,7 +681,7 @@
   "qf.templates.customTemplate.new": {
     "message": "新規作成..."
   },
-  "qf.templates.customTemplate.restricted" : {
+  "qf.templates.customTemplate.restricted": {
     "message": "アシスタント用の新しいカスタムテンプレートを作成するには、有効なquickFiltersProライセンスが必要です。"
   },
   "qf.templates.customTemplate.tooltip": {
@@ -1176,6 +1176,9 @@
   "quickfilters.prompt.customTemplateName": {
     "message": "カスタムテンプレートの名前:"
   },
+  "quickfilters.prompt.fixDuplicates": {
+    "message": "以下のフィルターに重複が見つかりました。\nこれを修正して、とにかくインポートしますか？"
+  },
   "quickfilters.promptDontRepeat": {
     "message": "今後はこの警告を表示しない"
   },
@@ -1189,7 +1192,7 @@
         "content": "quickFilters Pro"
       }
     }
-  },  
+  },
   "quickfilters.replyWithTemplate.label": {
     "message": "テンプレートを使用して返信する"
   },
@@ -1264,7 +1267,7 @@
   "renew-your-license": {
     "message": "ライセンスを更新する。"
   },
-  "restart-app" : {
+  "restart-app": {
     "message": "$application$ を再起動して、このオプションをアクティブにします。",
     "placeholders": {
       "application": {
@@ -1279,7 +1282,7 @@
       "folderName": {
         "content": "$1"
       }
-    }    
+    }
   },
   "runFilters.selection.confirm": {
     "message": "選択したメールにフィルターを実行しますか?"
@@ -1324,7 +1327,7 @@
         "example": "50%"
       }
     }
-  },   
+  },
   "subjectCompleteExtract": {
     "message": "常に完全な件名を挿入してください。"
   },

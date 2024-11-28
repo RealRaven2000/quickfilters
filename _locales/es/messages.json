@@ -288,7 +288,7 @@
   },
   "pricing.section.hint": {
     "message": "Nota: El precio varía según el modelo de licencia, país, tipo de IVA, descuentos vigentes o licencias ya adquiridas."
-  },  
+  },
   "pricing.title": {
     "message": "Precios"
   },
@@ -389,7 +389,7 @@
   },
   "qf.description.splash": {
     "message": "Muestre noticias y cambios importantes, localizados en su idioma:"
-  },  
+  },
   "qf.donate.tooltip": {
     "message": "¡Apoye el desarrollo de quickFilters!"
   },
@@ -585,13 +585,13 @@
   "qf.label.quickfilters": {
     "message": "quickFilters"
   },
-  "qf.label.removeOwnAddresses" : {
+  "qf.label.removeOwnAddresses": {
     "message": "Eliminar mis propias direcciones de correo electrónico (recomendado)"
   },
-  "qf.label.removeOwnAddresses.tip" : {
+  "qf.label.removeOwnAddresses.tip": {
     "message": "La extracción de sus propias direcciones de correo electrónico con el asistente puede generar resultados no deseados, por lo que los términos de búsqueda de direcciones los eliminan automáticamente."
   },
-  "qf.label.shortcut.challenge" : {
+  "qf.label.shortcut.challenge": {
     "message": "Confirmar antes de ejecutar filtros cuando no esté en una bandeja de entrada"
   },
   "qf.label.shortcut.runFolder": {
@@ -681,7 +681,7 @@
   "qf.templates.customTemplate.new": {
     "message": "Crear nueva…"
   },
-  "qf.templates.customTemplate.restricted" : {
+  "qf.templates.customTemplate.restricted": {
     "message": "Necesita una licencia válida de QuickFilters Pro para crear nuevas plantillas personalizadas para el asistente."
   },
   "qf.templates.customTemplate.tooltip": {
@@ -1176,6 +1176,9 @@
   "quickfilters.prompt.customTemplateName": {
     "message": "Nombre de la plantilla personalizada:"
   },
+  "quickfilters.prompt.fixDuplicates": {
+    "message": "Hemos encontrado duplicados para los siguientes filtros.\n¿Corregir esto e importar de todos modos?"
+  },
   "quickfilters.promptDontRepeat": {
     "message": "No volver a mostrar esta advertencia."
   },
@@ -1264,7 +1267,7 @@
   "renew-your-license": {
     "message": "Renueva tu licencia."
   },
-  "restart-app" : {
+  "restart-app": {
     "message": "Reinicie $application$ para activar esta opción.",
     "placeholders": {
       "application": {
@@ -1279,7 +1282,7 @@
       "folderName": {
         "content": "$1"
       }
-    }    
+    }
   },
   "runFilters.selection.confirm": {
     "message": "¿Ejecutar filtros en correos seleccionados?"
@@ -1324,7 +1327,7 @@
         "example": "50%"
       }
     }
-  },   
+  },
   "subjectCompleteExtract": {
     "message": "Siempre inserte la línea de asunto completa."
   },

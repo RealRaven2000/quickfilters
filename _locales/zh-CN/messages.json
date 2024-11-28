@@ -283,7 +283,7 @@
   },
   "pricing.section.hint": {
     "message": "注意：价格因许可证型号、国家/地区、增值税税率、当前折扣或已购买的许可证而异。"
-  },  
+  },
   "pricing.title": {
     "message": "价钱"
   },
@@ -384,7 +384,7 @@
   },
   "qf.description.splash": {
     "message": "以您的语言显示新闻和重要变化："
-  },  
+  },
   "qf.donate.tooltip": {
     "message": "请支持 quickFilters 的开发人员 !"
   },
@@ -454,7 +454,7 @@
   "qf.filters.steps.tooltip": {
     "message": "创建过滤器后显示哪些屏幕"
   },
-    "qf.filters.template.custom.description": {
+  "qf.filters.template.custom.description": {
     "message": "自定义过滤器 - 其行为由用户定义 - 变量如 %from% %to% %subject% 等等."
   },
   "qf.filters.template.domain": {
@@ -580,13 +580,13 @@
   "qf.label.quickfilters": {
     "message": "quickFilters"
   },
-  "qf.label.removeOwnAddresses" : {
+  "qf.label.removeOwnAddresses": {
     "message": "删除我自己的电子邮件地址（推荐）"
   },
-  "qf.label.removeOwnAddresses.tip" : {
+  "qf.label.removeOwnAddresses.tip": {
     "message": "使用助手提取您自己的电子邮件地址可能会导致不想要的结果，因此地址搜索词会自动删除这些。"
   },
-  "qf.label.shortcut.challenge" : {
+  "qf.label.shortcut.challenge": {
     "message": "不在收件箱中时在执行过滤器之前确认"
   },
   "qf.label.shortcut.runFolder": {
@@ -600,7 +600,7 @@
   },
   "qf.licenseValidation.expired": {
     "message": "您输入的许可证密钥已过期。请按下面的按钮更新您的许可证。"
-  },  
+  },
   "qf.licenseValidation.failed": {
     "message": "您輸入的許可證密鑰無效。 檢查您來自 FastSpring 的電子郵件以獲取說明。 如果您仍有問題，請通過“支持”選項卡與我聯繫。"
   },
@@ -676,7 +676,7 @@
   "qf.templates.customTemplate.new": {
     "message": "新建…"
   },
-  "qf.templates.customTemplate.restricted" : {
+  "qf.templates.customTemplate.restricted": {
     "message": "您需要有效的 quickFilters Pro 许可证才能为助手创建新的自定义模板。"
   },
   "qf.templates.customTemplate.tooltip": {
@@ -1168,6 +1168,9 @@
   "quickfilters.prompt.customTemplateName": {
     "message": "自定义模板的名称:"
   },
+  "quickfilters.prompt.fixDuplicates": {
+    "message": "我们发现以下过滤器存在重复。\n修复此问题并继续导入吗？"
+  },
   "quickfilters.promptDontRepeat": {
     "message": "不要再次显示此警告。"
   },
@@ -1181,7 +1184,7 @@
         "content": "quickFilters Pro"
       }
     }
-  },  
+  },
   "quickfilters.replyWithTemplate.label": {
     "message": "使用模板回复"
   },
@@ -1256,7 +1259,7 @@
   "renew-your-license": {
     "message": "续订您的许可证。"
   },
-  "restart-app" : {
+  "restart-app": {
     "message": "重新启动 $application$ 以激活此选项。",
     "placeholders": {
       "application": {
@@ -1271,7 +1274,7 @@
       "folderName": {
         "content": "$1"
       }
-    }    
+    }
   },
   "runFilters.selection.confirm": {
     "message": "对选定的邮件运行过滤器？"
@@ -1316,7 +1319,7 @@
         "example": "50%"
       }
     }
-  },   
+  },
   "subjectCompleteExtract": {
     "message": "始终插入完整的主题行。"
   },

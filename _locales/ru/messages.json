@@ -288,7 +288,7 @@
   },
   "pricing.section.hint": {
     "message": "Примечание. Цена зависит от модели лицензии, страны, ставки НДС, действующих скидок или уже приобретенных лицензий."
-  },  
+  },
   "pricing.title": {
     "message": "Цены"
   },
@@ -389,7 +389,7 @@
   },
   "qf.description.splash": {
     "message": "Отображение новостей и важных изменений, локализованных на вашем языке:"
-  },  
+  },
   "qf.donate.tooltip": {
     "message": "Поддержать развитие quickFilters!"
   },
@@ -585,13 +585,13 @@
   "qf.label.quickfilters": {
     "message": "quickFilters"
   },
-  "qf.label.removeOwnAddresses" : {
+  "qf.label.removeOwnAddresses": {
     "message": "Удалить мои собственные адреса электронной почты (рекомендуется)"
   },
-  "qf.label.removeOwnAddresses.tip" : {
+  "qf.label.removeOwnAddresses.tip": {
     "message": "Извлечение собственных адресов электронной почты с помощью помощника может привести к нежелательным результатам, поэтому условия поиска адресов удаляют их автоматически."
   },
-  "qf.label.shortcut.challenge" : {
+  "qf.label.shortcut.challenge": {
     "message": "Подтвердите перед выполнением фильтров, когда не в папке «Входящие»"
   },
   "qf.label.shortcut.runFolder": {
@@ -681,7 +681,7 @@
   "qf.templates.customTemplate.new": {
     "message": "Создать новый…"
   },
-  "qf.templates.customTemplate.restricted" : {
+  "qf.templates.customTemplate.restricted": {
     "message": "Вам нужна действующая лицензия quickFilters Pro, чтобы создавать новые пользовательские шаблоны для помощника."
   },
   "qf.templates.customTemplate.tooltip": {
@@ -1176,6 +1176,9 @@
   "quickfilters.prompt.customTemplateName": {
     "message": "Имя настраиваемого шаблона:"
   },
+  "quickfilters.prompt.fixDuplicates": {
+    "message": "Vi hittade duplicerade filter för följande objekt.\nVill du åtgärda detta och ändå importera?"
+  },
   "quickfilters.promptDontRepeat": {
     "message": "Не показывать это предупреждение снова."
   },
@@ -1189,7 +1192,7 @@
         "content": "quickFilters Pro"
       }
     }
-  },  
+  },
   "quickfilters.replyWithTemplate.label": {
     "message": "Ответить по шаблону"
   },
@@ -1264,7 +1267,7 @@
   "renew-your-license": {
     "message": "Обновите лицензию."
   },
-  "restart-app" : {
+  "restart-app": {
     "message": "Перезапустите $application$, чтобы активировать эту опцию.",
     "placeholders": {
       "application": {
@@ -1279,7 +1282,7 @@
       "folderName": {
         "content": "$1"
       }
-    }    
+    }
   },
   "runFilters.selection.confirm": {
     "message": "Запускать фильтры для выбранных писем?"
@@ -1324,7 +1327,7 @@
         "example": "50%"
       }
     }
-  },   
+  },
   "subjectCompleteExtract": {
     "message": "Всегда вводите полную строку темы."
   },

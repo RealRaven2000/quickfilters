@@ -1629,12 +1629,48 @@ quickFilters.List = {
       // or match the string up to .id!
 			
 			if (filtersJSON) {
-				// filtersJSON = filtersJSON.replace(/\r?\n|\r/, ''); // remove all line breaks
-				let entries = filtersJSON.filters; // JSON.parse(folders);
-				for (let i = 0; i < entries.length; i++) {
-					filterArray.push(entries[i]);
-				}
-			}
+        // filtersJSON = filtersJSON.replace(/\r?\n|\r/, ''); // remove all line breaks
+        let entries = filtersJSON.filters; // JSON.parse(folders);
+
+        // [issue 277] Guard against duplicate names: 
+        const nameTracker = new Map();
+        const duplicateFilters = []; // To store duplicate filter names and counts.
+        // Process `filterName` values
+        entries.forEach((filter) => {
+          if (filter.filterName) {
+            let name = filter.filterName;
+            if (nameTracker.has(name)) {
+              const count = nameTracker.get(name) + 1;
+              nameTracker.set(name, count);
+              filter.filterName = `${name}-${count}`;
+            } else {
+              nameTracker.set(name, 1);
+            }
+          }
+        });
+
+        // Collect duplicates for reporting
+        nameTracker.forEach((count, name) => {
+          if (count > 1) {
+            duplicateFilters.push(`${name} (${count - 1})`);
+          }
+        });
+
+        // if duplicates needed to be fixed insert message and here confirmation
+        if (duplicateFilters.length) {
+          const prompt = quickFilters.Util.getBundleString("quickfilters.prompt.fixDuplicates");
+          const result = Services.prompt.confirm(
+            window || null,
+            "quickFilters",
+            prompt + "\n" + duplicateFilters.join("\n")
+          );
+          if (!result) return;
+        }
+
+        for (let i = 0; i < entries.length; i++) {
+          filterArray.push(entries[i]);
+        }
+      }
 			
       // if (prefs.isDebug) debugger;
 			let iAdded = 0, 

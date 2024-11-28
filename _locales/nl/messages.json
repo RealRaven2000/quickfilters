@@ -288,7 +288,7 @@
   },
   "pricing.section.hint": {
     "message": "Opmerking: de prijs varieert afhankelijk van het licentiemodel, het land, het btw-tarief, huidige kortingen of reeds gekochte licenties."
-  },  
+  },
   "pricing.title": {
     "message": "Prijzen"
   },
@@ -389,7 +389,7 @@
   },
   "qf.description.splash": {
     "message": "Toon nieuws en belangrijke wijzigingen, gelokaliseerd in uw taal:"
-  },  
+  },
   "qf.donate.tooltip": {
     "message": "Ondersteun de ontwikkeling van quickFilters!"
   },
@@ -585,13 +585,13 @@
   "qf.label.quickfilters": {
     "message": "quickFilters"
   },
-  "qf.label.removeOwnAddresses" : {
+  "qf.label.removeOwnAddresses": {
     "message": "Mijn eigen e-mailadressen verwijderen (aanbevolen)"
   },
-  "qf.label.removeOwnAddresses.tip" : {
+  "qf.label.removeOwnAddresses.tip": {
     "message": "Het extraheren van uw eigen e-mailadressen met behulp van de assistent kan leiden tot ongewenste resultaten, dus adreszoektermen verwijderen deze automatisch."
   },
-  "qf.label.shortcut.challenge" : {
+  "qf.label.shortcut.challenge": {
     "message": "Bevestig voordat u filters uitvoert wanneer u zich niet in een Postvak IN bevindt"
   },
   "qf.label.shortcut.runFolder": {
@@ -681,7 +681,7 @@
   "qf.templates.customTemplate.new": {
     "message": "Nieuw maken…"
   },
-  "qf.templates.customTemplate.restricted" : {
+  "qf.templates.customTemplate.restricted": {
     "message": "U hebt een geldige quickFilters Pro-licentie nodig om nieuwe aangepaste sjablonen voor de assistent te maken."
   },
   "qf.templates.customTemplate.tooltip": {
@@ -1176,6 +1176,10 @@
   "quickfilters.prompt.customTemplateName": {
     "message": "Naam van aangepast sjabloon:"
   },
+  "quickfilters.prompt.fixDuplicates": {
+    "message": "We hebben dubbele filters gevonden voor de onderstaande items.\nWilt u dit oplossen en toch importeren?"
+  },
+
   "quickfilters.promptDontRepeat": {
     "message": "Deze waarschuwing niet meer weergeven."
   },
@@ -1189,7 +1193,7 @@
         "content": "quickFilters Pro"
       }
     }
-  },  
+  },
   "quickfilters.replyWithTemplate.label": {
     "message": "Met sjabloon antwoorden"
   },
@@ -1264,7 +1268,7 @@
   "renew-your-license": {
     "message": "Verleng uw licentie."
   },
-  "restart-app" : {
+  "restart-app": {
     "message": "Start $application$ opnieuw om deze optie te activeren.",
     "placeholders": {
       "application": {
@@ -1279,7 +1283,7 @@
       "folderName": {
         "content": "$1"
       }
-    }    
+    }
   },
   "runFilters.selection.confirm": {
     "message": "Filters uitvoeren op geselecteerde e-mails?"
@@ -1324,7 +1328,7 @@
         "example": "50%"
       }
     }
-  },   
+  },
   "subjectCompleteExtract": {
     "message": "Vul altijd de volledige onderwerpregel in."
   },
